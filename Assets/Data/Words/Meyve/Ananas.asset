@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Ananas
+  m_EditorClassIdentifier: 
+  Category: 6
+  Label: Ananas
+  Image: {fileID: 21300000, guid: 72a63962a08d04010831987913685af6, type: 3}
+  Audio: {fileID: 8300000, guid: 2af9b9058c8ef4c4ea85e847d5fbd119, type: 3}

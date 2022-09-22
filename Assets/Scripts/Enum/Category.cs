@@ -3,12 +3,19 @@
 [Serializable]
 public enum Category
 {
-    Fiil = 1,
-    Böcek = 4,
-    Hayvan = 3,
-    İsim = 2,
-    Bitki = 5,
-    El,
-    Body,
-
+    Kıyafet,
+    ÜstGiyim,
+    AltGiyim,
+    Aksesuar,
+    Besin,
+    TemelBesin,
+    Meyve,
+    Sebze,
+    EtTavukVeBalık,
+    BaharatSosVeTatlandırıcı,
+    PişmisIslemGörmüşBesin,
+    Kahvaltılık,
+    KuruYemiş,
+    Tatli,
+    İçecek
 }

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: "Yer F\u0131st\u0131g\u0306\u0131"
+  m_EditorClassIdentifier: 
+  Category: 12
+  Label: "Yer F\u0131st\u0131\u011F\u0131"
+  Image: {fileID: 21300000, guid: 296fef7dbb6c94f819d533b7c0cda643, type: 3}
+  Audio: {fileID: 8300000, guid: f419d4a08c8c149c0a04033e266b68d3, type: 3}
