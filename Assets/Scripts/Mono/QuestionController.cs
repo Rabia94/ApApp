@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class QuestionController : MonoBehaviour
 {
+    [SerializeField]QuestionView questionView;
     [SerializeField]QuestionModel questionModel;
 
-    public Word GetWord(int level)
+    [ContextMenu(nameof(SetWordData))]
+    public void SetWordData()
     {
-        return questionModel.GetRandomLevelWord(level);
+        questionView.SetCurrentQuestion(GetWordData());
     }
+
+    public QuestionData GetWordData()
+    {
+        return questionModel.GetRandomQuestionData();
+    }
+
+ 
 }

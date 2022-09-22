@@ -7,10 +7,10 @@ public class WordList : ScriptableObject
 {
     public List<Word> Words = new List<Word>();
 
-    public List<Word> GetWords(CategoryGroup categories)
+    public List<Word> GetWords(List<Category> categories)
     {
         List<Word> words = new List<Word>();
-        foreach (var category in categories.Categories)
+        foreach (var category in categories)
         {
             words.AddRange(Words.FindAll(w => w.Category == category));
         }

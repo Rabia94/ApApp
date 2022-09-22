@@ -8,6 +8,4 @@ public class CategoryGroup : ScriptableObject
 {
     [SerializeField] List<Category> categories;
     public List<Category> Categories => categories.Distinct().ToList();
-
-
 }

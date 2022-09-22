@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Nohut
   m_EditorClassIdentifier: 
   Category: 5
-  Label: Kuru Fasulye
-  Image: {fileID: 21300000, guid: ac5000d6a1d8345408bf8c556d41aa90, type: 3}
-  Audio: {fileID: 8300000, guid: c7a7e49be5503490cbc79c76d41b73db, type: 3}
+  Label: Nohut
+  Image: {fileID: 21300000, guid: 043ba9becbc8d402cb9de37070b061e6, type: 3}
+  Audio: {fileID: 8300000, guid: e093d592d76dc4f04811382a8be5450d, type: 3}
