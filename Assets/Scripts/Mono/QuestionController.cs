@@ -18,5 +18,4 @@ public class QuestionController : MonoBehaviour
         return questionModel.GetRandomQuestionData();
     }
 
- 
 }
