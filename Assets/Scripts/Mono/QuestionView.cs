@@ -8,7 +8,6 @@ public class QuestionView : MonoBehaviour
     [SerializeField] Transform wordHolder;
     [SerializeField] WordOptionView wordPrefab;
 
-
     public void SetCurrentQuestion(QuestionData questionData)
     {
         var count = wordHolder.childCount;
@@ -22,6 +21,4 @@ public class QuestionView : MonoBehaviour
             Instantiate(wordPrefab, wordHolder).SetWord(questionData.AllWords[i]);
         }
     }
-
-
 }

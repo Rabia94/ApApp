@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: Lahmacun
+  m_Name: Ihlamur
   m_EditorClassIdentifier: 
-  Category: 10
-  Label: Lahmacun
-  Image: {fileID: 21300000, guid: 42b7e1542e9e4433bbe1eacd5981cfdb, type: 3}
-  Audio: {fileID: 8300000, guid: 6db5799e2b3ac49ddb6562548d07c439, type: 3}
+  ParentCategory: 4
+  Category: 14
+  Label: Ihlamur
+  Image: {fileID: 21300000, guid: 628ba3461a4f4411e8c5a9af15efec8a, type: 3}
+  Audio: {fileID: 8300000, guid: 8918d51fc1c204347b8b3d2f4ae52475, type: 3}

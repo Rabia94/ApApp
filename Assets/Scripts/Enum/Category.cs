@@ -1,7 +1,7 @@
 ﻿using System;
 
 [Serializable]
-public enum Category
+public enum SubCategory
 {
     Kıyafet,
     ÜstGiyim,
@@ -13,9 +13,16 @@ public enum Category
     Sebze,
     EtTavukVeBalık,
     BaharatSosVeTatlandırıcı,
-    PişmisIslemGörmüşBesin,
+    PişmisIslemGörmüsBesin,
     Kahvaltılık,
     KuruYemiş,
     Tatli,
     İçecek
+}
+
+[Serializable]
+public enum Category
+{
+    Kıyafet,
+    Besin,
 }

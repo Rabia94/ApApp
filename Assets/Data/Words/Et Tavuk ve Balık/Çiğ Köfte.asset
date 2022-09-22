@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "\xC7i\u011F K\xF6fte"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 8
   Label: "\xC7i\u011F K\xF6fte"
   Image: {fileID: 21300000, guid: 69abec580d33643678e3bea9f94e848e, type: 3}

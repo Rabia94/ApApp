@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Brokoli
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 7
   Label: Brokoli
   Image: {fileID: 21300000, guid: 8b273bd245a6d4f988216bc76982caf3, type: 3}

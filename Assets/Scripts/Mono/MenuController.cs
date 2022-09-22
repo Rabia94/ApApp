@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -16,5 +17,10 @@ public class MenuController : MonoBehaviour
     void OpenQuestionSettingsMenu()
     {
         menuView.OpenQuestionSettingsMenu();
+    }
+
+    public void OpenQuestionScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }

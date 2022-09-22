@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Domates
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 7
   Label: Domates
   Image: {fileID: 21300000, guid: c109c07a8f11c4f4198ba147ce683174, type: 3}

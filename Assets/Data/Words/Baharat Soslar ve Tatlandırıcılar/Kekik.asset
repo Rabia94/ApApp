@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Kekik
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 9
   Label: Kekik
   Image: {fileID: 21300000, guid: 31b4287eb834e4cde8a6774ea880ca36, type: 3}

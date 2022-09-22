@@ -6,6 +6,7 @@ using UnityEngine;
 public class Word : ScriptableObject
 {
     public Category Category;
+    public SubCategory SubCategory;
     public string Label;
     public Sprite Image;
     public AudioClip Audio;

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Zencefil
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 9
   Label: Zencefil
   Image: {fileID: 21300000, guid: 8d8cd1d76040e4b91901980315cb11b3, type: 3}

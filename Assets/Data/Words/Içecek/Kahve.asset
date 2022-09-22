@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: "B\xF6rek"
+  m_Name: Kahve
   m_EditorClassIdentifier: 
-  Category: 10
-  Label: "B\xF6rek"
-  Image: {fileID: 21300000, guid: 433424560a92046339c066ef5688360f, type: 3}
-  Audio: {fileID: 8300000, guid: a2fc33c4cbf2d4396b787b11c0a4ce2e, type: 3}
+  ParentCategory: 4
+  Category: 14
+  Label: Kahve
+  Image: {fileID: 21300000, guid: 5c0ad9c8d9da748f89a4be11ec1d5ea6, type: 3}
+  Audio: {fileID: 8300000, guid: 843597c922ea6470ca3c639fd7884521, type: 3}

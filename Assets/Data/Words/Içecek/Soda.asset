@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c39409f5e0fff49e88dc8b6ecac8e97d, type: 3}
-  m_Name: Level1
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Soda
   m_EditorClassIdentifier: 
-  categories: 000000000100000002000000
+  ParentCategory: 4
+  Category: 14
+  Label: Soda
+  Image: {fileID: 21300000, guid: 6caca8b00d5b24957a1bd2021412b7ef, type: 3}
+  Audio: {fileID: 8300000, guid: b08e77c2f6b0142eba54969831dc9678, type: 3}

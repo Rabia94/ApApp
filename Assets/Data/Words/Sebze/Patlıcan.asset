@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Patl\u0131can"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 7
   Label: "Patl\u0131can"
   Image: {fileID: 21300000, guid: 2f5cc9257fd944337b6306422fbf1f53, type: 3}

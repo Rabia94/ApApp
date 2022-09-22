@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Tereya\u011F\u0131"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 11
   Label: "Tereya\u011F\u0131"
   Image: {fileID: 21300000, guid: c47330ae659244f18b2abbb2ad4b5df3, type: 3}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Ceviz
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 12
   Label: Ceviz
   Image: {fileID: 21300000, guid: 992a2afef1672414186b1a7d4bc622fa, type: 3}

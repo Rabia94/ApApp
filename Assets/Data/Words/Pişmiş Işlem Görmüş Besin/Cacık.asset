@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: Pide
+  m_Name: "Cac\u0131k"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 10
-  Label: Pide
-  Image: {fileID: 21300000, guid: c8b2eb2e42cc14b4a8b34b4188604a2a, type: 3}
-  Audio: {fileID: 8300000, guid: 609f78a7d7eb44cd1843c539ccf8c2f8, type: 3}
+  Label: "Cac\u0131k"
+  Image: {fileID: 21300000, guid: 2d099659f6d4d4e859f1999f3d265a18, type: 3}
+  Audio: {fileID: 8300000, guid: 4baa95ca6a56e45a98b5dcc68c922601, type: 3}

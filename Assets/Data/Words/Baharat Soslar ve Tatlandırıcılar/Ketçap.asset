@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Ketc\u0327ap"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 9
   Label: "Ket\xE7ap"
   Image: {fileID: 21300000, guid: 4d211b733173443f7b3d57e6a3102f7f, type: 3}

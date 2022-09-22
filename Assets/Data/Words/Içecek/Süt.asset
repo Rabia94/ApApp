@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: Soda
+  m_Name: "Su\u0308t"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 14
-  Label: Soda
-  Image: {fileID: 21300000, guid: 6caca8b00d5b24957a1bd2021412b7ef, type: 3}
-  Audio: {fileID: 8300000, guid: b08e77c2f6b0142eba54969831dc9678, type: 3}
+  Label: "S\xFCt"
+  Image: {fileID: 21300000, guid: 407a7fbdc72db415695295415e2bf5df, type: 3}
+  Audio: {fileID: 8300000, guid: 27496f29d18cd4c399bc932782d8652d, type: 3}

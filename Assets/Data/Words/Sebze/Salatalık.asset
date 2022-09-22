@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Salatal\u0131k"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 7
   Label: "Salatal\u0131k"
   Image: {fileID: 21300000, guid: 68bdaa217c72f4f3683b29924b7d9de2, type: 3}

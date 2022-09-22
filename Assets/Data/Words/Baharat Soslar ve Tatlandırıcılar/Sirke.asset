@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Sirke
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 9
   Label: Sirke
   Image: {fileID: 21300000, guid: 199f3ffb4c5964d85b5b471d784f8ee1, type: 3}

@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: Salata
+  m_Name: Pilav
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 10
-  Label: Salata
-  Image: {fileID: 21300000, guid: ca4fa3fd39b6d491eb40efadc2f2525b, type: 3}
-  Audio: {fileID: 8300000, guid: 2a7e747e64f5d45c0af80658b475386f, type: 3}
+  Label: Pilav
+  Image: {fileID: 21300000, guid: aa5fc92c6653942c1aa0ba4dee77d2ba, type: 3}
+  Audio: {fileID: 8300000, guid: b357fa97f064c4c2da69aab73ca289cf, type: 3}

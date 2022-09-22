@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Kus\u0327bas\u0327\u0131"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 8
   Label: "Ku\u015Fba\u015F\u0131"
   Image: {fileID: 21300000, guid: d0b566121408041c386091a628924f5d, type: 3}

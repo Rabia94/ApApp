@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: "Cac\u0131k"
+  m_Name: "\xC7orba"
   m_EditorClassIdentifier: 
+  ParentCategory: 4
   Category: 10
-  Label: "Cac\u0131k"
-  Image: {fileID: 21300000, guid: 2d099659f6d4d4e859f1999f3d265a18, type: 3}
-  Audio: {fileID: 8300000, guid: 4baa95ca6a56e45a98b5dcc68c922601, type: 3}
+  Label: "\xC7orba"
+  Image: {fileID: 21300000, guid: 5e7765865059e4114afbbe97f7968361, type: 3}
+  Audio: {fileID: 8300000, guid: 894da0d800f8b491e8560d101b823079, type: 3}
