@@ -27,8 +27,6 @@ public class QuestionModel
         }
     }
 
-
-
     QuestionData SetQuestionData(Word word)
     {
         var data = new QuestionData();
@@ -42,7 +40,7 @@ public class QuestionModel
         QuestionData data = SetQuestionData(word);
         for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
         {
-
+            data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
         return data;
     }
@@ -52,9 +50,13 @@ public class QuestionModel
     QuestionData SetMediumQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
+        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
         {
-
+            data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
+        }
+        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+        {
+            data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
         return data;
     }
@@ -64,7 +66,14 @@ public class QuestionModel
         QuestionData data = SetQuestionData(word);
         for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
         {
-
+            for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+            {
+                data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
+            }
+            for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+            {
+                data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
+            }
         }
         return data;
     }
@@ -74,11 +83,11 @@ public class QuestionModel
         QuestionData data = SetQuestionData(word);
         for (int i = 0; i < QuestionSettings.AnswerCount*.5f - 1; i++)
         {
-            GetSameCategoryWord(word.Category, data.AllWords);
+          data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
         }
         for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
         {
-            GetSameSubCategoryWord(word.SubCategory, data.AllWords);
+            data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
         }
         return data;
     }
