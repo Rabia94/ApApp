@@ -407,7 +407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Number Of Choices
+  m_text: "Cevap Say\u0131s\u0131"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Number Of Questions
+  m_text: "Soru Say\u0131s\u0131"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Besinler
+  m_text: "K\u0131yafetler"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2132,7 +2132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Category
+  m_text: Kategori
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5744,9 +5744,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Besinler
-      m_Image: {fileID: 0}
     - m_Text: "K\u0131yafetler"
+      m_Image: {fileID: 0}
+    - m_Text: Besinler
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5906,10 +5906,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modePanel: {fileID: 985980154}
   questionSettingsPanel: {fileID: 416842275}
-  category: {fileID: 0}
-  dificulty: {fileID: 0}
-  numberOfChoices: {fileID: 0}
-  numberOfQuestions: {fileID: 0}
+  category: {fileID: 2030426581}
+  difficulty: {fileID: 1256227671}
+  numberOfChoices: {fileID: 1848523164}
+  numberOfQuestions: {fileID: 219664292}
 --- !u!1 &2086687454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5968,7 +5968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Difficulty
+  m_text: Zorluk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6134,7 +6134,7 @@ GameObject:
   - component: {fileID: 2137026035}
   - component: {fileID: 2137026034}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Oyna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6204,7 +6204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2137026035}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b72773d9768dc4aa2af9ed1c4d75091d, type: 2}
+        m_TargetAssemblyTypeName: ScriptableSceneManager, Assembly-CSharp
+        m_MethodName: OpenQuestionScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2137026035
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,11 @@ public class QuestionController : MonoBehaviour
     [SerializeField]QuestionView questionView;
     [SerializeField]QuestionModel questionModel;
 
+    private void Awake()
+    {
+        SetWordData();
+    }
+
     [ContextMenu(nameof(SetWordData))]
     public void SetWordData()
     {

@@ -10,7 +10,8 @@ public class QuestionModel
 
     public QuestionData GetRandomQuestionData()
     {
-        var word = wordList.GetCategoryWords(QuestionSettings.Category).GetRandomElement();
+        var categoryWords = wordList.GetCategoryWords(QuestionSettings.Category);
+        var word = categoryWords.GetRandomElement();
 
         switch (QuestionSettings.Difficulty)
         {

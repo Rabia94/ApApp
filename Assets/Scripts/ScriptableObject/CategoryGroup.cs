@@ -9,3 +9,4 @@ public class CategoryGroup : ScriptableObject
     [SerializeField] List<SubCategory> categories;
     public List<SubCategory> Categories => categories.Distinct().ToList();
 }
+

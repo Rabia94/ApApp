@@ -7,7 +7,11 @@ public class MenuController : MonoBehaviour
     [SerializeField] MenuModel questionModel;
 
 
-    public void SelectMode() { }
+    private void Awake()
+    {
+        menuView.SetMenu();
+    }
+
     public void SelectMode(int i)
     {
         QuestionSettings.Mode = (Mode)i;
@@ -19,8 +23,5 @@ public class MenuController : MonoBehaviour
         menuView.OpenQuestionSettingsMenu();
     }
 
-    public void OpenQuestionScene()
-    {
-        SceneManager.LoadScene(1);
-    }
+
 }
