@@ -1,7 +1,7 @@
 ﻿public enum Difficulty
 {
-    Easy,
-    Medium,
-    Hard,
-    VeryHard
+    Kolay,
+    Orta,
+    Zor,
+    CokZor
 }

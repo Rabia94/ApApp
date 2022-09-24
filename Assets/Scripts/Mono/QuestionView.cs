@@ -23,10 +23,18 @@ public class QuestionView : MonoBehaviour
 
         for (int i = 0; i < QuestionSettings.AnswerCount; i++)
         {
-            if(questionData.AllWords[i]== questionData.CorrectWord)
+            var word = questionData.AllWords[i];
+            if (word == questionData.CorrectWord)
+            {
+                Debug.Log("Correct Word");
                 Instantiate(wordPrefab, wordHolder).SetWord(questionData.AllWords[i], onCorrectAnswer);
+            }
             else
+            {
+                Debug.Log("Wrong Word");
                 Instantiate(wordPrefab, wordHolder).SetWord(questionData.AllWords[i], onWrongAnswer);
+            }
+            Debug.Log("Word: " + word.Label + " Category: " + word.Category + " SubCategory: " + word.SubCategory);
         }
     }
 

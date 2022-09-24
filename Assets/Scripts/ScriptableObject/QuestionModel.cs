@@ -19,13 +19,13 @@ public class QuestionModel
 
         switch (QuestionSettings.Difficulty)
         {
-            case Difficulty.Easy:
+            case Difficulty.Kolay:
                 return SetEasyQuestion(word);
-            case Difficulty.Medium:
+            case Difficulty.Orta:
                 return SetMediumQuestion(word);
-            case Difficulty.Hard:
+            case Difficulty.Zor:
                 return SetHardQuestion(word);
-            case Difficulty.VeryHard:
+            case Difficulty.CokZor:
                 return SetVeryHardQuestion(word);
             default:
                 return null;
@@ -86,7 +86,7 @@ public class QuestionModel
     QuestionData SetVeryHardQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.AnswerCount*.5f - 1; i++)
+        for (int i = 0; i < (QuestionSettings.AnswerCount-1)*.5f ; i++)
         {
           data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
         }
