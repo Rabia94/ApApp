@@ -43,7 +43,8 @@ public class QuestionModel
     QuestionData SetEasyQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
+        var restCount = QuestionSettings.AnswerCount - data.AllWords.Count;
+        for (int i = 0; i < restCount; i++)
         {
             data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
@@ -59,7 +60,8 @@ public class QuestionModel
         {
             data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
         }
-        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+        var restCount = QuestionSettings.AnswerCount - data.AllWords.Count;
+        for (int i = 0; i < restCount; i++)
         {
             data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
@@ -73,7 +75,8 @@ public class QuestionModel
         {
             data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
         }
-        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+        var restCount = QuestionSettings.AnswerCount - data.AllWords.Count;
+        for (int i = 0; i < restCount; i++)
         {
             data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
@@ -87,7 +90,8 @@ public class QuestionModel
         {
           data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
         }
-        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+        var restCount = QuestionSettings.AnswerCount - data.AllWords.Count;
+        for (int i = 0; i < restCount; i++)
         {
             data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
         }

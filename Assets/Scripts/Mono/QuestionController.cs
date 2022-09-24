@@ -27,19 +27,19 @@ public class QuestionController : MonoBehaviour
         return questionModel.GetRandomQuestionData();
     }
 
-    void OnWrongAnswer()
+    async void OnWrongAnswer()
     {
         UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.SetActive(false);
         questionView.ToggleWrongAnswerPanel(true);
-      //  await Task.Delay(1000);
+        await Task.Delay(1000);
         questionView.ToggleWrongAnswerPanel(false);
 
     }
 
-    void OnCorrectAnswer()
+    async void OnCorrectAnswer()
     {
         questionView.ToggleCorrectAnswerPanel(true);
-      //  await Task.Delay(1000);
+        await Task.Delay(1000);
         SetWordData();
         questionView.ToggleCorrectAnswerPanel(false);
     }
