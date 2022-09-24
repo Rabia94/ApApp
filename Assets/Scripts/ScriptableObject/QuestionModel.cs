@@ -64,16 +64,13 @@ public class QuestionModel
     QuestionData SetHardQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
+        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
         {
-            for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
-            {
-                data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
-            }
-            for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
-            {
-                data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
-            }
+            data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
+        }
+        for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
+        {
+            data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
         return data;
     }

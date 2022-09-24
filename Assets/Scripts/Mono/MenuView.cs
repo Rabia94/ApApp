@@ -12,6 +12,7 @@ public class MenuView : MonoBehaviour
     [SerializeField] TMP_Dropdown numberOfChoices;
     [SerializeField] TMP_InputField numberOfQuestions;
 
+
     public void OpenQuestionSettingsMenu()
     {
         modePanel.SetActive(false);
@@ -20,6 +21,6 @@ public class MenuView : MonoBehaviour
 
     public void SetSettings()
     {
-        QuestionSettings.
+        QuestionSettings.Category = (Category)category.value;
     }
 }
