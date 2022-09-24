@@ -6,11 +6,15 @@ using UnityEngine;
 [Serializable]
 public class QuestionModel 
 {
-    [SerializeField]WordList wordList;
+    [SerializeField] WordList wordList;
+    List<Word> words=>wordList.Words;
 
+
+   
+    
     public QuestionData GetRandomQuestionData()
     {
-        var categoryWords = wordList.GetCategoryWords(QuestionSettings.Category);
+        var categoryWords = GetCategoryWords(QuestionSettings.Category);
         var word = categoryWords.GetRandomElement();
 
         switch (QuestionSettings.Difficulty)
@@ -92,61 +96,75 @@ public class QuestionModel
 
     Word GetSameSubCategoryWord(SubCategory subCategory, List<Word> questionWords)
     {
-        var words = wordList.GetSubCategoryWords(subCategory);
-        var randomWord = words.GetRandomElement();
+        var categoryWords = GetSubCategoryWords(subCategory);
+        var randomWord = categoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))
         {
-            randomWord = words.GetRandomElement();
+            randomWord = categoryWords.GetRandomElement();
         }
         return randomWord;
     }
 
     Word GetSameCategoryWord(Category category, List<Word> questionWords)
     {
-        var words = wordList.GetCategoryWords(category);
-        var randomWord = words.GetRandomElement();
+        var categoryWords = GetCategoryWords(category);
+        var randomWord = categoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))
         {
-            randomWord = words.GetRandomElement();
+            randomWord = categoryWords.GetRandomElement();
         }
         return randomWord;
     }
 
     Word GetDifferentSubCategoryWord(SubCategory subCategory, List<Word> questionWords)
     {
-        var words = wordList.Words;
-        var wordsToRemove = wordList.GetSubCategoryWords(subCategory);
+        var categoryWords = words;
+        var wordsToRemove = GetSubCategoryWords(subCategory);
         foreach (var word in wordsToRemove)
         {
             if (words.Contains(word))
-                words.Remove(word);
+                categoryWords.Remove(word);
         }
-        var randomWord = words.GetRandomElement();
+        var randomWord = categoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))
         {
-            randomWord = words.GetRandomElement();
+            randomWord = categoryWords.GetRandomElement();
         }
         return randomWord;
     }
 
     Word GetDifferentCategoryWord(Category category, List<Word> questionWords)
     {
-        var words = wordList.Words;
-        var wordsToRemove = wordList.GetCategoryWords(category);
+        var categoryWords = words;
+        var wordsToRemove = GetCategoryWords(category);
         foreach (var word in wordsToRemove)
         {
             if (words.Contains(word))
-                words.Remove(word);
+                categoryWords.Remove(word);
         }
-        var randomWord = words.GetRandomElement();
+        var randomWord = categoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))
         {
-            randomWord = words.GetRandomElement();
+            randomWord = categoryWords.GetRandomElement();
         }
         return randomWord;
+    }
+
+    public List<Word> GetCategoryWords(Category category)
+    {
+        List<Word> categoryWords = new List<Word>();
+        categoryWords.AddRange(words.FindAll(w => w.Category == category));
+        return categoryWords.Distinct().ToList();
+    }
+
+    public List<Word> GetSubCategoryWords(SubCategory subCategory)
+    {
+        List<Word> categoryWords = new List<Word>();
+        categoryWords.AddRange(words.FindAll(w => w.SubCategory == subCategory));
+        return categoryWords.Distinct().ToList();
     }
 }
