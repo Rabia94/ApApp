@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Simit
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 11
+  Category: 1
+  SubCategory: 9
   Label: Simit
   Image: {fileID: 21300000, guid: 84f66a87c8d10420191edcde8ce92349, type: 3}
   Audio: {fileID: 8300000, guid: d9dd388a4b976428a94f1f866945312c, type: 3}

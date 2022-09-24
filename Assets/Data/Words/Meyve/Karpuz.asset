@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Karpuz
   m_EditorClassIdentifier: 
-  Category: 6
+  Category: 1
+  SubCategory: 4
   Label: Karpuz
   Image: {fileID: 21300000, guid: f979653218a4949e49cd9a445530f684, type: 3}
   Audio: {fileID: 8300000, guid: f2007e60cbba64c1ba60edef0d136967, type: 3}

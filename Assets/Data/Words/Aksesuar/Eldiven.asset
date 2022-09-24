@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Eldiven
   m_EditorClassIdentifier: 
-  Category: 3
+  Category: 0
+  SubCategory: 2
   Label: Eldiven
   Image: {fileID: 21300000, guid: 7231413ab0dca46b89ab2c73396f08f3, type: 3}
   Audio: {fileID: 8300000, guid: e060b59da63514531a98f76750646059, type: 3}

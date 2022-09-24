@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Limonata
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 14
+  Category: 1
+  SubCategory: 12
   Label: Limonata
   Image: {fileID: 21300000, guid: 6e8b4dceac30e4ef2a6427dd01f4504d, type: 3}
   Audio: {fileID: 8300000, guid: 09f99cf11db25422ca88641efdf8cd97, type: 3}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Helva
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 13
+  Category: 1
+  SubCategory: 11
   Label: Helva
   Image: {fileID: 21300000, guid: 67fe3d0c2f10a4d13b46161a7e3cf71d, type: 3}
   Audio: {fileID: 8300000, guid: b05ef0ec8b30144fe9c291a3266a896e, type: 3}

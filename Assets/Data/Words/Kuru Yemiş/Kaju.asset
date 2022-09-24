@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Kaju
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 12
+  Category: 1
+  SubCategory: 10
   Label: Kaju
   Image: {fileID: 21300000, guid: b57c5172129b74d46948f07dc47a52a4, type: 3}
   Audio: {fileID: 8300000, guid: 036636b42d6e1489c9b135035b4949c2, type: 3}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Kabak
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 7
+  Category: 1
+  SubCategory: 5
   Label: Kabak
   Image: {fileID: 21300000, guid: ad4fb4e75b8804c1bad70ff75e0fa2ea, type: 3}
   Audio: {fileID: 8300000, guid: 4f1c304dc547d4ffbaf7210b60d6debc, type: 3}

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Meyve
   m_EditorClassIdentifier: 
-  Category: 6
+  Category: 1
+  SubCategory: 4
   Label: Meyve
   Image: {fileID: 21300000, guid: 1d511a4e418bd482390c5458e89479bd, type: 3}
   Audio: {fileID: 8300000, guid: 1ccbd5afad875475db4d5a150ea9089a, type: 3}

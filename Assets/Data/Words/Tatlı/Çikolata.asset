@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "\xC7ikolata"
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 13
+  Category: 1
+  SubCategory: 11
   Label: "\xC7ikolata"
   Image: {fileID: 21300000, guid: 43348595eb5504b4186b1c6564ff2dba, type: 3}
   Audio: {fileID: 8300000, guid: 4fcd6d4545d4b41a1a14e0570ddd01c3, type: 3}

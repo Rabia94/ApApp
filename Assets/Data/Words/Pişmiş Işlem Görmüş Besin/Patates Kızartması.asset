@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Patates K\u0131zartmas\u0131"
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 10
+  Category: 1
+  SubCategory: 8
   Label: "Patates K\u0131zartmas\u0131"
   Image: {fileID: 21300000, guid: acddb9ee4ea8f4bc585c924a8e5d1fa5, type: 3}
   Audio: {fileID: 8300000, guid: a31c33a1c62334425842638902fbb350, type: 3}

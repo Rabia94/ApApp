@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Saat
   m_EditorClassIdentifier: 
-  Category: 3
+  Category: 0
+  SubCategory: 2
   Label: Saat
   Image: {fileID: 21300000, guid: 76038bd61b0dd45ef81d8e0246c7d392, type: 3}
   Audio: {fileID: 8300000, guid: 3da0a45699cd647e58a6ee8bdbe3b8a2, type: 3}

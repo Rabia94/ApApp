@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Toka
   m_EditorClassIdentifier: 
-  Category: 3
+  Category: 0
+  SubCategory: 2
   Label: Toka
   Image: {fileID: 21300000, guid: 749ed18f43e664effba63b74eee704c0, type: 3}
   Audio: {fileID: 8300000, guid: 55cdba2af30cf4e6eb88662e4d294a9a, type: 3}

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Kavun
   m_EditorClassIdentifier: 
-  Category: 6
+  Category: 1
+  SubCategory: 4
   Label: Kavun
   Image: {fileID: 21300000, guid: 333999f97fe874e28a7849eee3fc3177, type: 3}
   Audio: {fileID: 8300000, guid: b92c0fd0510374c94bf002ae3ada5d10, type: 3}

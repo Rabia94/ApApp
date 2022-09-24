@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "S\u0327ort"
   m_EditorClassIdentifier: 
-  Category: 2
+  Category: 0
+  SubCategory: 1
   Label: "\u015Eort"
   Image: {fileID: 21300000, guid: 21e7317afbc1f4e0ab527e72ea459ab5, type: 3}
   Audio: {fileID: 8300000, guid: 4ca69027440eb4bb09e9f64032fb52e6, type: 3}

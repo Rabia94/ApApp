@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Yu\u0308zu\u0308k"
   m_EditorClassIdentifier: 
-  Category: 3
+  Category: 0
+  SubCategory: 2
   Label: "Y\xFCz\xFCk"
   Image: {fileID: 21300000, guid: 83dac6c1910e5479cbd4fbfc3e2f521d, type: 3}
   Audio: {fileID: 8300000, guid: dc72b3de2410a43468bc97665c3bbe27, type: 3}

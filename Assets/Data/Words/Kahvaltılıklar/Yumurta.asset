@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Yumurta
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 11
+  Category: 1
+  SubCategory: 9
   Label: Yumurta
   Image: {fileID: 21300000, guid: 08332aa9127ce4bb295597de24bf8ce0, type: 3}
   Audio: {fileID: 8300000, guid: 5bf8f83dd41db410abbbc38f6c8784b8, type: 3}

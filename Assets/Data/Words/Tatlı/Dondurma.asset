@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Dondurma
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 13
+  Category: 1
+  SubCategory: 11
   Label: Dondurma
   Image: {fileID: 21300000, guid: c6398c48d54e74a6c943b046de2be3b7, type: 3}
   Audio: {fileID: 8300000, guid: 3ad1d6aa7de0844408ddd098d4954b43, type: 3}

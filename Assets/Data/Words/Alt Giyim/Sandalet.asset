@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Sandalet
   m_EditorClassIdentifier: 
-  Category: 2
+  Category: 0
+  SubCategory: 1
   Label: Sandalet
   Image: {fileID: 21300000, guid: 5252ae24ad0ee4043b2d650784fde723, type: 3}
   Audio: {fileID: 8300000, guid: a80ede39363fd4741984196ab0ae3cfa, type: 3}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Karabiber
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 9
+  Category: 1
+  SubCategory: 7
   Label: Karabiber
   Image: {fileID: 21300000, guid: 9cb5204cd78604f7cb49ef4f7fe69abe, type: 3}
   Audio: {fileID: 8300000, guid: 935e45d515bfb4dfd85a9dc69f695f4f, type: 3}

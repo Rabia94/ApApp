@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "K\u0131s\u0131r"
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 10
+  Category: 1
+  SubCategory: 8
   Label: "K\u0131s\u0131r"
   Image: {fileID: 21300000, guid: 4dd131c49d5564e4dbb6139c1a5f5fe4, type: 3}
   Audio: {fileID: 8300000, guid: b277992a64f0c40028304e18365d8fe1, type: 3}

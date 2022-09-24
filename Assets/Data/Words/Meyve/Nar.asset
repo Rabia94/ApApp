@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Nar
   m_EditorClassIdentifier: 
-  Category: 6
+  Category: 1
+  SubCategory: 4
   Label: Nar
   Image: {fileID: 21300000, guid: f70a40e0be0734b5b8bc01b7621637b1, type: 3}
   Audio: {fileID: 8300000, guid: 6c2b4697ff08b4d6bbfe47db086b99e7, type: 3}

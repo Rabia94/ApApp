@@ -3,11 +3,9 @@
 [Serializable]
 public enum SubCategory
 {
-    Kıyafet,
     ÜstGiyim,
     AltGiyim,
     Aksesuar,
-    Besin,
     TemelBesin,
     Meyve,
     Sebze,

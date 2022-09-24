@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: "Kay\u0131s\u0131"
   m_EditorClassIdentifier: 
-  Category: 6
+  Category: 1
+  SubCategory: 4
   Label: "Kay\u0131s\u0131"
   Image: {fileID: 21300000, guid: 9a71fd95a0202425db9af3bdd64d2725, type: 3}
   Audio: {fileID: 8300000, guid: fc199de811f354d04890669eb06dbbe4, type: 3}

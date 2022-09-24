@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Bulgur
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 5
+  Category: 1
+  SubCategory: 3
   Label: Bulgur
   Image: {fileID: 21300000, guid: 31e84ff84e5564a2a82043d6b2cbfcba, type: 3}
   Audio: {fileID: 8300000, guid: 18772750f7b394341b2c2370fcc5682b, type: 3}

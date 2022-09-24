@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Ayran
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 14
+  Category: 1
+  SubCategory: 12
   Label: Ayran
   Image: {fileID: 21300000, guid: 749d08c0d6dd04b42b66fc1a15f017f6, type: 3}
   Audio: {fileID: 8300000, guid: f4cf9cd2a9e2f48188338775ddf622dc, type: 3}

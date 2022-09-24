@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Armut
   m_EditorClassIdentifier: 
-  Category: 6
+  Category: 1
+  SubCategory: 4
   Label: Armut
   Image: {fileID: 21300000, guid: 3696bc248535b4c6cab32916c9483bd9, type: 3}
   Audio: {fileID: 8300000, guid: 5a59386601d0d4f20bcfd8cb82da20f1, type: 3}

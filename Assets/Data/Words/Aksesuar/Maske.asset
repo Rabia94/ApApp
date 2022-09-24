@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Maske
   m_EditorClassIdentifier: 
-  Category: 3
+  Category: 0
+  SubCategory: 2
   Label: Maske
   Image: {fileID: 21300000, guid: 19c697e7d9da943dbaa750b469c369db, type: 3}
   Audio: {fileID: 8300000, guid: 1fd2ffa2b07b0476e92051dc136436d9, type: 3}

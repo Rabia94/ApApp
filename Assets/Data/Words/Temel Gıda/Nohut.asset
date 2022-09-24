@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Nohut
   m_EditorClassIdentifier: 
-  ParentCategory: 4
-  Category: 5
+  Category: 1
+  SubCategory: 3
   Label: Nohut
   Image: {fileID: 21300000, guid: 043ba9becbc8d402cb9de37070b061e6, type: 3}
   Audio: {fileID: 8300000, guid: e093d592d76dc4f04811382a8be5450d, type: 3}
