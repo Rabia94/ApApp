@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,12 +10,16 @@ public class QuestionView : MonoBehaviour
 {
     [SerializeField] Transform wordHolder;
     [SerializeField] WordOptionView wordPrefab;
+    [SerializeField] TMP_Text questionText;
     [SerializeField] GameObject wrongPanel;
     [SerializeField] GameObject correctPanel;
+    [SerializeField] GameObject resultPanel;
+    [SerializeField] TMP_Text resultText;
 
 
     public void SetCurrentQuestion(QuestionData questionData,UnityAction onWrongAnswer, UnityAction onCorrectAnswer)
     {
+        questionText.text = questionData.QuestionIndex + "/" + QuestionSettings.QuestionCount;
         var count = wordHolder.childCount;
         for (int i = 0; i < count; i++)
         {
@@ -49,4 +54,10 @@ public class QuestionView : MonoBehaviour
         correctPanel.SetActive(value);
     }
 
+    public void ShowResultPage(ResultData resultData)
+    {
+        resultPanel.SetActive(true);
+        resultText.text = "Doğru Cevap: " + resultData.CorrectAnswerCount + " Yanlış Cevap: " + resultData.WrongAnswerCount
+            + " Başlangıç Saati: " + resultData.StartedTime + " Bitiş Saati: " + resultData.EndedTime;
+    }
 }
