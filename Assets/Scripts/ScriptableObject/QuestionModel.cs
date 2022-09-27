@@ -17,6 +17,7 @@ public class QuestionModel
         var categoryWords = GetCategoryWords(QuestionSettings.Category);
         var word = categoryWords.GetRandomElement();
 
+
         switch (QuestionSettings.Difficulty)
         {
             case Difficulty.Kolay:

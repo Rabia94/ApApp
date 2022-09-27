@@ -57,7 +57,9 @@ public class QuestionView : MonoBehaviour
     public void ShowResultPage(ResultData resultData)
     {
         resultPanel.SetActive(true);
-        resultText.text = "Doğru Cevap: " + resultData.CorrectAnswerCount + " Yanlış Cevap: " + resultData.WrongAnswerCount
-            + " Başlangıç Saati: " + resultData.StartedTime + " Bitiş Saati: " + resultData.EndedTime;
+        resultText.text = "Zorluk: " + resultData.Difficulty+ "\nŞık Sayısı: " + resultData.AnswerCount+ "\nSoru Sayısı: " 
+            + resultData.QuestionCount + "\nDoğru Cevap: " + resultData.CorrectAnswerCount + "\nYanlış Cevap: " + resultData.WrongAnswerCount
+            + "\nGeçen Süre: " + resultData.Time.ToString("0.0") + " sn"
+            + "\nSoru Başına Geçen Süre: " + (resultData.Time/ resultData.QuestionCount).ToString("0.0") + " sn";
     }
 }

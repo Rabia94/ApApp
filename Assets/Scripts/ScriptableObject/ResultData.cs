@@ -2,8 +2,10 @@
 
 public struct ResultData
 {
+    public Difficulty Difficulty => QuestionSettings.Difficulty;
+    public int QuestionCount => QuestionSettings.QuestionCount;
+    public int AnswerCount => QuestionSettings.AnswerCount;
     public int CorrectAnswerCount;
     public int WrongAnswerCount;
-    public Time StartedTime;
-    public Time EndedTime;
+    public float Time;
 }

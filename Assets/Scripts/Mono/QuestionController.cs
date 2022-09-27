@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class QuestionController : MonoBehaviour
 
     private void Awake()
     {
-        SetWordData();
+        Invoke(nameof(SetWordData), 1);
         questionView.ToggleWrongAnswerPanel(false);
         questionView.ToggleCorrectAnswerPanel(false);
 
@@ -32,7 +33,9 @@ public class QuestionController : MonoBehaviour
 
     public QuestionData GetWordData()
     {
-        return questionModel.GetRandomQuestionData();
+        QuestionData data= questionModel.GetRandomQuestionData();
+        data.AllWords = data.AllWords.RandomizeList();
+        return data;
     }
 
     async void OnWrongAnswer()
@@ -41,10 +44,10 @@ public class QuestionController : MonoBehaviour
             questionModel.ResultData.WrongAnswerCount++;
         UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.SetActive(false);
         questionView.ToggleWrongAnswerPanel(true);
-        await Task.Delay(300);
-        PlayCurrentWordAudio();
         await Task.Delay(1000);
         questionView.ToggleWrongAnswerPanel(false);
+        PlayCurrentWordAudio();
+
     }
 
     async void OnCorrectAnswer()
@@ -62,6 +65,7 @@ public class QuestionController : MonoBehaviour
         }
         else
         {
+            questionModel.ResultData.Time = Time.time;
             ShowResultPage();
         }   
     }
