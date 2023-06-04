@@ -3904,7 +3904,7 @@ MonoBehaviour:
   m_Placeholder: {fileID: 0}
   m_ItemText: {fileID: 2060935120}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "Hi\xE7"
@@ -4649,14 +4649,14 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 480041265}
-  m_Template: {fileID: 847293685}
-  m_CaptionText: {fileID: 973532523}
+  m_TargetGraphic: {fileID: 529244244}
+  m_Template: {fileID: 1729395435}
+  m_CaptionText: {fileID: 2032667158}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 2060935120}
+  m_ItemText: {fileID: 599114053}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "Hi\xE7"
@@ -9351,7 +9351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Siddetli D\xFCzeyde"
+  m_text: "Hi\xE7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9595,7 +9595,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transkortikal Duyu
+  m_text: Bilmiyorum
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10110,14 +10110,14 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 480041265}
-  m_Template: {fileID: 847293685}
-  m_CaptionText: {fileID: 973532523}
+  m_TargetGraphic: {fileID: 1024970518}
+  m_Template: {fileID: 804530598}
+  m_CaptionText: {fileID: 1390240799}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 2060935120}
+  m_ItemText: {fileID: 833147865}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "Hi\xE7"
@@ -10815,7 +10815,7 @@ MonoBehaviour:
   m_Placeholder: {fileID: 0}
   m_ItemText: {fileID: 56017621}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: Bilmiyorum
@@ -10982,14 +10982,14 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 480041265}
-  m_Template: {fileID: 847293685}
-  m_CaptionText: {fileID: 973532523}
+  m_TargetGraphic: {fileID: 1109538896}
+  m_Template: {fileID: 562372688}
+  m_CaptionText: {fileID: 2126400099}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 2060935120}
+  m_ItemText: {fileID: 1956044515}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "Hi\xE7"
@@ -13085,7 +13085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transkortikal Duyu
+  m_text: "Hi\xE7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14320,7 +14320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transkortikal Duyu
+  m_text: "Hi\xE7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14896,14 +14896,14 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 480041265}
-  m_Template: {fileID: 847293685}
-  m_CaptionText: {fileID: 973532523}
+  m_TargetGraphic: {fileID: 1452045149}
+  m_Template: {fileID: 988144143}
+  m_CaptionText: {fileID: 1284226496}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 2060935120}
+  m_ItemText: {fileID: 524371213}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "Hi\xE7"
@@ -17880,14 +17880,14 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 480041265}
-  m_Template: {fileID: 847293685}
-  m_CaptionText: {fileID: 973532523}
+  m_TargetGraphic: {fileID: 1825650155}
+  m_Template: {fileID: 1230663387}
+  m_CaptionText: {fileID: 2127826879}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 2060935120}
+  m_ItemText: {fileID: 1300635206}
   m_ItemImage: {fileID: 0}
-  m_Value: 5
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "Hi\xE7"
@@ -20149,7 +20149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transkortikal Duyu
+  m_text: "Hi\xE7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20978,7 +20978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transkortikal Duyu
+  m_text: "Hi\xE7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21113,7 +21113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transkortikal Duyu
+  m_text: "Hi\xE7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
