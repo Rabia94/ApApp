@@ -3,12 +3,18 @@
 [Serializable]
 public enum Category
 {
-    Kıyafet,
-    Besin,
-    Hayvan,
-    Eşya,
-    Fiil,
-    Sıfat,
-    Taşıt,
-    Mekan
+    Kıyafetler,
+    Yiyecekler,
+    İçecekler,
+    Bitkiler,
+    Hayvanlar,
+    Eşyalar,
+    Eylemler,
+    Sıfatlar,
+    Taşıtlar,
+    Mekanlar,
+    GenelKavramlar,
+    VücutKısımları,
+    Kişiler,
+    Meslekler
 }
