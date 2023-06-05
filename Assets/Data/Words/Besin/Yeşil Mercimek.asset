@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: "Yes\u0327il Mercimek"
+  m_EditorClassIdentifier: 
+  Category: 1
+  SubCategory: 3
+  Label: "Ye\u015Fil Mercimek"
+  Image: {fileID: 21300000, guid: c9657a67116d44a32a609192097b6eae, type: 3}
+  Audio: {fileID: 8300000, guid: 467d2df7ef9c24c7d9dde8d2339e3612, type: 3}
