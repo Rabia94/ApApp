@@ -74,7 +74,7 @@ public class QuestionModel
         QuestionData data = SetQuestionData(word);
         for (int i = 0; i < QuestionSettings.AnswerCount * .5f - 1; i++)
         {
-            data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
+            data.AllWords.Add(GetSameSubCategoryWord(word.Group, data.AllWords));
         }
         var restCount = QuestionSettings.AnswerCount - data.AllWords.Count;
         for (int i = 0; i < restCount; i++)
@@ -94,14 +94,14 @@ public class QuestionModel
         var restCount = QuestionSettings.AnswerCount - data.AllWords.Count;
         for (int i = 0; i < restCount; i++)
         {
-            data.AllWords.Add(GetSameSubCategoryWord(word.SubCategory, data.AllWords));
+            data.AllWords.Add(GetSameSubCategoryWord(word.Group, data.AllWords));
         }
         return data;
     }
 
-    Word GetSameSubCategoryWord(SubCategory subCategory, List<Word> questionWords)
+    Word GetSameSubCategoryWord(int group, List<Word> questionWords)
     {
-        var categoryWords = GetSubCategoryWords(subCategory);
+        var categoryWords = GetSubCategoryWords(group);
         var randomWord = categoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))
@@ -123,10 +123,10 @@ public class QuestionModel
         return randomWord;
     }
 
-    Word GetDifferentSubCategoryWord(SubCategory subCategory, List<Word> questionWords)
+    Word GetDifferentSubCategoryWord(int group, List<Word> questionWords)
     {
         var categoryWords = words;
-        var wordsToRemove = GetSubCategoryWords(subCategory);
+        var wordsToRemove = GetSubCategoryWords(group);
         foreach (var word in wordsToRemove)
         {
             if (words.Contains(word))
@@ -166,10 +166,10 @@ public class QuestionModel
         return categoryWords.Distinct().ToList();
     }
 
-    public List<Word> GetSubCategoryWords(SubCategory subCategory)
+    public List<Word> GetSubCategoryWords(int group)
     {
         List<Word> categoryWords = new List<Word>();
-        categoryWords.AddRange(words.FindAll(w => w.SubCategory == subCategory));
+        categoryWords.AddRange(words.FindAll(w => w.Group == group));
         return categoryWords.Distinct().ToList();
     }
 }

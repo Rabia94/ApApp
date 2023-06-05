@@ -39,7 +39,7 @@ public class QuestionView : MonoBehaviour
                 Debug.Log("Wrong Word");
                 Instantiate(wordPrefab, wordHolder).SetWord(questionData.AllWords[i], onWrongAnswer);
             }
-            Debug.Log("Word: " + word.Label + " Category: " + word.Category + " SubCategory: " + word.SubCategory);
+            Debug.Log("Word: " + word.Label + " Category: " + word.Category + " SubCategory: " + word.Group);
         }
     }
 

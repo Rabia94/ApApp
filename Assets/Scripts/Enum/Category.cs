@@ -5,4 +5,10 @@ public enum Category
 {
     Kıyafet,
     Besin,
+    Hayvan,
+    Eşya,
+    Fiil,
+    Sıfat,
+    Taşıt,
+    Mekan
 }
