@@ -30,6 +30,7 @@ public class MenuView : MonoBehaviour
         SetNumberOfChoices();
         SetNumberOfQuestions();
         ListenValueChange();
+        UpdateQualitySettings();
     }
 
     void SetCategory()
@@ -74,11 +75,13 @@ public class MenuView : MonoBehaviour
         kelimeTekrarSayısı.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
     }
 
-    public void UpdateQualitySettings()
+    private void UpdateQualitySettings()
     {
 //        QuestionSettings.Category = (Category)category.value;
         QuestionSettings.Difficulty = (Difficulty)difficulty.value;
-        QuestionSettings.AnswerCount = numberOfChoices.value + 2;
+        int cevapSayısı;
+        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out cevapSayısı);
+        QuestionSettings.AnswerCount = cevapSayısı;         
         int tekrar;
         Int32.TryParse(numberOfQuestions.text, out tekrar);
         QuestionSettings.QuestionCount = tekrar * _questionModel.GetSelectedCategoryGroupWords().Count;

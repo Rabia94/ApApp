@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,9 +13,9 @@ public class GroupPanelController : MonoBehaviour
     [SerializeField] private int _nextSceneIndex=4;
     public void SetPanel(List<int> categoryGroups)
     {
-        foreach (int group in categoryGroups)
+        for (int i = 1; i < categoryGroups.Count+1; i++)
         {
-            Instantiate(_panelButtonPrefab, _parent).SetButton(group,_nextSceneIndex);
+            Instantiate(_panelButtonPrefab, _parent).SetButton(i,_nextSceneIndex);
         }
     }
 }

@@ -2,6 +2,5 @@
 {
     Kolay,
     Orta,
-    Zor,
-    CokZor
+    Zor
 }

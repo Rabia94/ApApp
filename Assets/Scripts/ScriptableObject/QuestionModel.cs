@@ -26,8 +26,6 @@ public class QuestionModel
                 return SetMediumQuestion(word);
             case Difficulty.Zor:
                 return SetHardQuestion(word);
-            case Difficulty.CokZor:
-                return SetVeryHardQuestion(word);
             default:
                 return null;
         }
