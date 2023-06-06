@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 2
   Group: 6
-  Label: 
-  Image: {fileID: 0}
-  Audio: {fileID: 0}
+  Label: "Yenge\xE7"
+  Image: {fileID: 21300000, guid: 088b1361b36a7408eb389def0ff1635b, type: 3}
+  Audio: {fileID: 8300000, guid: 70a5cfb87f01b4149ba813166d47afe1, type: 3}
