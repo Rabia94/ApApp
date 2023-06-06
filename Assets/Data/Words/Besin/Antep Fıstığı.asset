@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Antep F\u0131st\u0131g\u0306\u0131"
   m_EditorClassIdentifier: 
   Category: 1
-  SubCategory: 10
+  Group: 0
   Label: "Antep F\u0131st\u0131g\u0306\u0131"
-  Image: {fileID: 21300000, guid: 41967ef8f2d2e436d9fc6c50746c9e74, type: 3}
-  Audio: {fileID: 8300000, guid: 64a4f36e4b70541e78fd224ec778acf2, type: 3}
+  Image: {fileID: 21300000, guid: 13fae87ecc99a45ff93301f0a508c762, type: 3}
+  Audio: {fileID: 8300000, guid: e2643be8697ef4c148d4d4eb250f1346, type: 3}

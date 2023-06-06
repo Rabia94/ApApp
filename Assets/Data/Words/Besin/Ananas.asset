@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ananas
   m_EditorClassIdentifier: 
   Category: 1
-  SubCategory: 4
+  Group: 0
   Label: Ananas
-  Image: {fileID: 21300000, guid: 72a63962a08d04010831987913685af6, type: 3}
-  Audio: {fileID: 8300000, guid: 2af9b9058c8ef4c4ea85e847d5fbd119, type: 3}
+  Image: {fileID: 21300000, guid: ede595ed2a83b4aa4a97fb4ee2a291ed, type: 3}
+  Audio: {fileID: 8300000, guid: 7f023b574a92b441bb8fdc728cc5b551, type: 3}
