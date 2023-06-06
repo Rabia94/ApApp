@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 public class MainManager : MonoBehaviour
 {
     public static UserData UserData;
-    [SerializeField] private string _patientInfoScene;
+    [SerializeField] private int _patientInfoSceneIndex;
+    [SerializeField] private int _welcomeSceneIndex;
     private static string _saveKey = "UserData";
 
     private void Awake()
@@ -12,7 +13,11 @@ public class MainManager : MonoBehaviour
         SetUserData();
         if (UserData == null)
         {
-            SceneManager.LoadScene(_patientInfoScene);
+            SceneManager.LoadScene(_patientInfoSceneIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(_welcomeSceneIndex);
         }
     }
 
@@ -37,4 +42,11 @@ public class UserData
     public string Birthday;
     public string Education;
     public string Employment;
+    public string AfaziTuru;
+    public string SeyDiyor;
+    public string DuydugunuAnlamak;
+    public string KonusmaktaZorluk;
+    public string KonusmaktaTekrar;
+    public string OkumaktaZorluk;
+    public string YazmakdaZorluk;
 }

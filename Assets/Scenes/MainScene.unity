@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91642115aba9b9b41b28020998308af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _patientInfoScene: PatientInfoScene
+  _patientInfoSceneIndex: 1
+  _welcomeSceneIndex: 2
 --- !u!4 &1518979867
 Transform:
   m_ObjectHideFlags: 0

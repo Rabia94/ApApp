@@ -4,17 +4,15 @@
 public enum Category
 {
     Kıyafetler,
-    Yiyecekler,
-    İçecekler,
-    Bitkiler,
-    Hayvanlar,
-    Eşyalar,
+    YiyecekVeIcecekler,
+    BitkiVeHayvanlar,
+    Esyalar,
     Eylemler,
     Sıfatlar,
-    Taşıtlar,
+    Tasıtlar,
     Mekanlar,
     GenelKavramlar,
-    VücutKısımları,
-    Kişiler,
+    VucutKısımları,
+    Kisiler,
     Meslekler
 }

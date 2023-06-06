@@ -101,7 +101,7 @@ public class QuestionModel
 
     Word GetSameSubCategoryWord(int group, List<Word> questionWords)
     {
-        var categoryWords = GetSubCategoryWords(group);
+        var categoryWords = GetGroupWords(group);
         var randomWord = categoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))
@@ -126,7 +126,7 @@ public class QuestionModel
     Word GetDifferentSubCategoryWord(int group, List<Word> questionWords)
     {
         var categoryWords = words;
-        var wordsToRemove = GetSubCategoryWords(group);
+        var wordsToRemove = GetGroupWords(group);
         foreach (var word in wordsToRemove)
         {
             if (words.Contains(word))
@@ -165,8 +165,23 @@ public class QuestionModel
         categoryWords.AddRange(words.FindAll(w => w.Category == category));
         return categoryWords.Distinct().ToList();
     }
+    
+    public List<int> GetCategoryGroups(Category category)
+    {
+        List<int> groups = new List<int>();
+        List<Word> categoryWords = GetCategoryWords(category);
+        foreach (var word in categoryWords)
+        {
+            if (!groups.Contains(word.Group))
+            {
+                groups.Add(word.Group);
+            }
+        }
 
-    public List<Word> GetSubCategoryWords(int group)
+        return groups;
+    }
+
+    public List<Word> GetGroupWords(int group)
     {
         List<Word> categoryWords = new List<Word>();
         categoryWords.AddRange(words.FindAll(w => w.Group == group));

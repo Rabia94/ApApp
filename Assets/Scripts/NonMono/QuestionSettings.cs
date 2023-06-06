@@ -9,4 +9,5 @@ public static class QuestionSettings
     public static int QuestionCount = 3;
     public static int AnswerCount = 5;
     public static Category Category;
+    public static int GroupIndex;
 }
