@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 2
   Group: 6
-  Label: 
-  Image: {fileID: 0}
-  Audio: {fileID: 0}
+  Label: "Ar\u0131"
+  Image: {fileID: 21300000, guid: 0887c82e379c745b9996a9f03c6e038c, type: 3}
+  Audio: {fileID: 8300000, guid: f9d51c295462346119ed7979ffb4091b, type: 3}

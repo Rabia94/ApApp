@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: Akrep
+  m_Name: Ceket
   m_EditorClassIdentifier: 
-  Category: 2
-  Group: 6
-  Label: Akrep
-  Image: {fileID: 21300000, guid: 7ea5a27596f9341029f7b64b3950a3cc, type: 3}
-  Audio: {fileID: 8300000, guid: baceb583e7c104f20a3a3f1a8421290b, type: 3}
+  Category: 0
+  Group: 1
+  Label: Ceket
+  Image: {fileID: 21300000, guid: 2daddfb46783545aeb800af3ebf50457, type: 3}
+  Audio: {fileID: 8300000, guid: 62a260556ea8249adb5769a25c1cc99f, type: 3}

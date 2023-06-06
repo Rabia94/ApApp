@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 2
   Group: 6
-  Label: 
-  Image: {fileID: 0}
-  Audio: {fileID: 0}
+  Label: Kelebek
+  Image: {fileID: 21300000, guid: 0c8e6b7a705a44b38b71cbfd08e573c7, type: 3}
+  Audio: {fileID: 8300000, guid: e96034a900a8c4bdc984141e31ddafe3, type: 3}
