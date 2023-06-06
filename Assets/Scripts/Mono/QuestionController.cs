@@ -79,6 +79,4 @@ public class QuestionController : MonoBehaviour
     {
         questionView.ShowResultPage(questionModel.ResultData);
     }
-
-
 }

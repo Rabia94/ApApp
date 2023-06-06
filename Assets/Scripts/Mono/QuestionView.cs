@@ -48,7 +48,6 @@ public class QuestionView : MonoBehaviour
         wrongPanel.SetActive(value);
     }
 
-
     public void ToggleCorrectAnswerPanel(bool value)
     {
         correctPanel.SetActive(value);

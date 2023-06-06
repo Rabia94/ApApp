@@ -27,7 +27,7 @@ public class MenuView : MonoBehaviour
     {
         SetCategory();
         SetDifficulty();
-        SetNumberOfChoices();
+        //SetNumberOfChoices();
         SetNumberOfQuestions();
         ListenValueChange();
         UpdateQualitySettings();
@@ -83,7 +83,7 @@ public class MenuView : MonoBehaviour
         Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out cevapSayısı);
         QuestionSettings.AnswerCount = cevapSayısı;         
         int tekrar;
-        Int32.TryParse(numberOfQuestions.text, out tekrar);
+        Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out tekrar);
         QuestionSettings.QuestionCount = tekrar * _questionModel.GetSelectedCategoryGroupWords().Count;
         Debug.Log(QuestionSettings.Category);
         Debug.Log(QuestionSettings.Difficulty);
