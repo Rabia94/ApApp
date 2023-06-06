@@ -199,9 +199,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 452340794215879141, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452340794215879141, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476172818354582422, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476172818354582422, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476172818354582422, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476172818354582422, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 744589859625044184, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189608912830926356, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189608912830926356, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189608912830926356, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531340813784973214, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531340813784973214, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505339351780280751, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505339351780280751, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779966408922851164, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779966408922851164, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000040350255
       objectReference: {fileID: 0}
     - target: {fileID: 7424211175393049842, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
       propertyPath: m_Pivot.x
@@ -287,6 +347,138 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[2].Category
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[3].Category
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[4].Category
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[5].Category
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[6].Category
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[7].Category
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[8].Category
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[9].Category
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[10].Category
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[11].Category
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[2].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[3].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[4].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[5].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[6].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[7].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[8].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[9].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[0].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: ab8c03c779c0c49b8ba914e6092f1878, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[10].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[11].CategoryName
+      value: "Yiyecekler Ve I\xE7ecekler"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[1].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[2].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[3].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[4].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[5].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[6].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[7].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[8].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[9].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[10].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
+    - target: {fileID: 7634654074194861747, guid: 3faf35478ccbf1446831ded6a9f886c7, type: 3}
+      propertyPath: _categoryButtonDatas.Array.data[11].CategoryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 527d1c8dbfa98428e8f9b2825213457e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

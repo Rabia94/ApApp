@@ -13,6 +13,7 @@ public class GroupButton : MonoBehaviour
     {
         _text.SetText("Grup "+index);
         _index = index;
+        _nextSceneIndex = nextSceneIndex;
         GetComponent<Button>().onClick.AddListener(OnButtonClick);
     }
 

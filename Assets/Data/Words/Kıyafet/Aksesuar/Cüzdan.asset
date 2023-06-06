@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: "Cu\u0308zdan"
+  m_Name: "C\xFCzdan"
   m_EditorClassIdentifier: 
   Category: 0
-  SubCategory: 2
+  Group: 0
   Label: "C\xFCzdan"
   Image: {fileID: 21300000, guid: baf9df42986124588a2f5937ce2984af, type: 3}
   Audio: {fileID: 8300000, guid: 4a55d4f3e32424894aeb34b9a5138ad1, type: 3}

@@ -52,8 +52,6 @@ public class QuestionModel
         return data;
     }
 
-
-
     QuestionData SetMediumQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
@@ -179,6 +177,18 @@ public class QuestionModel
         }
 
         return groups;
+    }
+    
+    public List<Word> GetCategoryGroupWords(Category category, int group)
+    {
+        List<Word> groupWords = new List<Word>();
+        List<Word> categoryWords = GetCategoryWords(category);
+        groupWords.AddRange(categoryWords.FindAll(w => w.Group == group));
+        return groupWords.Distinct().ToList();
+    }
+    public List<Word> GetSelectedCategoryGroupWords()
+    {
+        return GetCategoryGroupWords(QuestionSettings.Category, QuestionSettings.GroupIndex);
     }
 
     public List<Word> GetGroupWords(int group)

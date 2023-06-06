@@ -11,6 +11,8 @@ public class CategoryController : MonoBehaviour
 
     private void Awake()
     {
+        _parent.gameObject.SetActive(true);
+        _groupPanelController.gameObject.SetActive(false);
         SetButtons();
     }
 
@@ -25,5 +27,8 @@ public class CategoryController : MonoBehaviour
     void SetGroupPanel(CategoryButtonData categoryButtonData)
     {
         _groupPanelController.SetPanel(_questionModel.GetCategoryGroups(categoryButtonData.Category));
+        QuestionSettings.Category = categoryButtonData.Category;
+        _parent.gameObject.SetActive(false);
+        _groupPanelController.gameObject.SetActive(true);
     }
 }

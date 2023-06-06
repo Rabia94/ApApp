@@ -12,6 +12,8 @@ public class CategoryButton : MonoBehaviour
     public void SetButton(CategoryButtonData categoryButtonData, UnityAction<CategoryButtonData> onButtonClick)
     {
         _button.onClick.AddListener(()=>onButtonClick(categoryButtonData));
+        _image.sprite = categoryButtonData.CategoryImage;
+        _text.text = categoryButtonData.CategoryName;
     }
     
 }

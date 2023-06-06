@@ -7,12 +7,14 @@ using static TMPro.TMP_Dropdown;
 
 public class MenuView : MonoBehaviour
 {
+    [SerializeField] private  QuestionModel _questionModel;
     [SerializeField] GameObject modePanel;
     [SerializeField] GameObject questionSettingsPanel;
     [SerializeField] TMP_Dropdown category;
     [SerializeField] TMP_Dropdown difficulty;
     [SerializeField] TMP_Dropdown numberOfChoices;
     [SerializeField] TMP_InputField numberOfQuestions;
+    [SerializeField] TMP_Dropdown kelimeTekrarSayısı;
 
 
     public void OpenQuestionSettingsMenu()
@@ -69,14 +71,17 @@ public class MenuView : MonoBehaviour
         difficulty.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
         numberOfChoices.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
         numberOfQuestions.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
+        kelimeTekrarSayısı.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
     }
 
     public void UpdateQualitySettings()
     {
-        QuestionSettings.Category = (Category)category.value;
+//        QuestionSettings.Category = (Category)category.value;
         QuestionSettings.Difficulty = (Difficulty)difficulty.value;
         QuestionSettings.AnswerCount = numberOfChoices.value + 2;
-        Int32.TryParse(numberOfQuestions.text, out QuestionSettings.QuestionCount);
+        int tekrar;
+        Int32.TryParse(numberOfQuestions.text, out tekrar);
+        QuestionSettings.QuestionCount = tekrar * _questionModel.GetSelectedCategoryGroupWords().Count;
         Debug.Log(QuestionSettings.Category);
         Debug.Log(QuestionSettings.Difficulty);
         Debug.Log(QuestionSettings.AnswerCount);
