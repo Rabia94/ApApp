@@ -4,7 +4,7 @@ using UnityEngine;
 public class Word : ScriptableObject
 {
     public Category Category;
-    [Range(1,20)] public int Group;
+    [Min(1)] public int Group;
     public string Label;
     public Sprite Image;
     public AudioClip Audio;
