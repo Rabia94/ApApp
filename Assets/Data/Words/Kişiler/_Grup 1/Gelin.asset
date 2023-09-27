@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: "A\u011Fa\xE7"
+  m_Name: Gelin
   m_EditorClassIdentifier: 
-  Category: 2
-  Group: 0
-  Label: "A\u011Fa\xE7"
-  Image: {fileID: 0}
-  Audio: {fileID: 8300000, guid: 78f3538f882bd4e338139efbba2ff97b, type: 3}
+  Category: 10
+  Group: 1
+  Label: Gelin
+  Image: {fileID: 21300000, guid: a40f2212b8bd742f489e8b5c0e1b3ee5, type: 3}
+  Audio: {fileID: 8300000, guid: 882fcf5b95bc74014b2093d20541e859, type: 3}

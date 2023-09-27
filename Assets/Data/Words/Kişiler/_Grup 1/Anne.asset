@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: "A\u011Fa\xE7"
+  m_Name: Anne
   m_EditorClassIdentifier: 
-  Category: 2
-  Group: 0
-  Label: "A\u011Fa\xE7"
-  Image: {fileID: 0}
-  Audio: {fileID: 8300000, guid: 78f3538f882bd4e338139efbba2ff97b, type: 3}
+  Category: 10
+  Group: 1
+  Label: Anne
+  Image: {fileID: 21300000, guid: 4b5dbe74442a94d5abf3dbe8b6123ebc, type: 3}
+  Audio: {fileID: 8300000, guid: 5eb5b94fb7641469dbc897b149019bf8, type: 3}
