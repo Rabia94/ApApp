@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -9,7 +6,9 @@ public class QuestionController : MonoBehaviour
     [SerializeField] QuestionView questionView;
     [SerializeField] QuestionModel questionModel;
     [SerializeField] AudioSource audioSource;
-
+    [SerializeField] private AudioClip wrongAudioClip;
+    [SerializeField] private AudioClip correctAudioClip;
+    
     QuestionData currentData;
     int currentQuestionIndex = 1;
 
@@ -18,7 +17,6 @@ public class QuestionController : MonoBehaviour
         Invoke(nameof(SetWordData), 1);
         questionView.ToggleWrongAnswerPanel(false);
         questionView.ToggleCorrectAnswerPanel(false);
-
     }
 
     [ContextMenu(nameof(SetWordData))]
@@ -28,7 +26,6 @@ public class QuestionController : MonoBehaviour
         currentData.QuestionIndex = currentQuestionIndex;
         questionView.SetCurrentQuestion(currentData, OnWrongAnswer,OnCorrectAnswer);
         PlayCurrentWordAudio();
-
     }
 
     public QuestionData GetWordData()
@@ -42,17 +39,23 @@ public class QuestionController : MonoBehaviour
     {
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.WrongAnswerCount++;
-        UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.SetActive(false);
+        Destroy(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
         questionView.ToggleWrongAnswerPanel(true);
+        audioSource.PlayOneShot(wrongAudioClip);
         await Task.Delay(1000);
         questionView.ToggleWrongAnswerPanel(false);
         PlayCurrentWordAudio();
-
+        Debug.Log(questionView.LeftAnswerCount);
+        if (questionView.LeftAnswerCount <= 2)
+        {
+            questionView.IncreaseCellSize();
+        }
     }
 
     async void OnCorrectAnswer()
     {
         questionView.ToggleCorrectAnswerPanel(true);
+        audioSource.PlayOneShot(correctAudioClip);
         await Task.Delay(1000);
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.CorrectAnswerCount++;

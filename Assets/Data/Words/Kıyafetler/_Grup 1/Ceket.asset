@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 1
   Label: Ceket
   Image: {fileID: 21300000, guid: 2daddfb46783545aeb800af3ebf50457, type: 3}
-  Audio: {fileID: 8300000, guid: 62a260556ea8249adb5769a25c1cc99f, type: 3}
+  Audio: {fileID: 8300000, guid: b8f5aae623d904b7892c6fd68048dc6a, type: 3}

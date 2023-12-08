@@ -1,11 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CategoryController : MonoBehaviour
 {
     [SerializeField]
     private QuestionModel _questionModel;
     [SerializeField] private CategoryButton  _categoryButtonPrefab;
-    [SerializeField] private Transform  _parent;
+    [SerializeField] private Transform _parent;
+    [SerializeField] private ScrollRect  scrollRect;
+
     [SerializeField] private GroupPanelController  _groupPanelController;
     [SerializeField] private CategoryButtonData[] _categoryButtonDatas;
 
