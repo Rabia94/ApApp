@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 2
   Label: "G\xFCl"
   Image: {fileID: 21300000, guid: f349e4e1d6c2c40a5b8cf656e3f58325, type: 3}
-  Audio: {fileID: 8300000, guid: c659f60095d744047956d33cf5462bff, type: 3}
+  Audio: {fileID: 8300000, guid: f2122b9efe6eb475389282cd607aaecd, type: 3}

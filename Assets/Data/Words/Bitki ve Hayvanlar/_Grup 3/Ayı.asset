@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: "Ay\u0131"
   Image: {fileID: 21300000, guid: 4b4849d3f849c46e2954f326881e4b7f, type: 3}
-  Audio: {fileID: 8300000, guid: 5463ae01e4bed40678bbed12d0e6c1a7, type: 3}
+  Audio: {fileID: 8300000, guid: f52f06c4527184560a821c231ce260c7, type: 3}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Sakal
+  m_EditorClassIdentifier: 
+  Category: 9
+  Group: 3
+  Label: Sakal
+  Image: {fileID: 21300000, guid: 274e7d3f5623f4d49848f3ad1b6c27bb, type: 3}
+  Audio: {fileID: 8300000, guid: 95fab4a591e81468f94292c3ff250b6c, type: 3}

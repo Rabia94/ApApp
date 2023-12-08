@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Geyik
   Image: {fileID: 21300000, guid: db3fd67bfe9b242e8a8c0ee467f81e9b, type: 3}
-  Audio: {fileID: 8300000, guid: dddc40d8b80b6419191eb297ef0e94d0, type: 3}
+  Audio: {fileID: 8300000, guid: 0b8f35675f9394ebc84c291933dad195, type: 3}

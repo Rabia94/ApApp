@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 1
   Label: "Muhabbet Ku\u015Fu"
   Image: {fileID: 21300000, guid: 943f7c433f6514ff1b653d6ba05ad661, type: 3}
-  Audio: {fileID: 8300000, guid: eda3d9480ed294fd1a3e954fa4e2d02c, type: 3}
+  Audio: {fileID: 8300000, guid: b84571133dd3b4fe8a39c37f4ad28eaf, type: 3}

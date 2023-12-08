@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 2
   Label: Lale
   Image: {fileID: 21300000, guid: 15b830050d4f641c9a6e39d2a239d711, type: 3}
-  Audio: {fileID: 8300000, guid: c882cda96428248a4bb4d976be096f3f, type: 3}
+  Audio: {fileID: 8300000, guid: 2e4d9260fb1e1414d8aeff5e39cd4aee, type: 3}

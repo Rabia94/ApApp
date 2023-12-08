@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Armut
+  m_EditorClassIdentifier: 
+  Category: 1
+  Group: 2
+  Label: Armut
+  Image: {fileID: 21300000, guid: 0947d091ea6ee4702b9a173d33aec7c3, type: 3}
+  Audio: {fileID: 8300000, guid: af459b1b0c130443a96de8e5a12aa6d3, type: 3}

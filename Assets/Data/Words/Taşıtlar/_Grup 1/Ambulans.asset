@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 1
   Label: Ambulans
   Image: {fileID: 21300000, guid: 9238f084e172240ac91596590c6b8cea, type: 3}
-  Audio: {fileID: 8300000, guid: fa58739786a164038833b12df8b5c02f, type: 3}
+  Audio: {fileID: 8300000, guid: 03f3cbbabb2794a929e6e6bab57b06e3, type: 3}

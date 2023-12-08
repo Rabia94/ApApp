@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "A\u011Fa\xE7"
   m_EditorClassIdentifier: 
   Category: 2
-  Group: 0
+  Group: 2
   Label: "A\u011Fa\xE7"
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 66ef55edde9584ac6944cfd5eb8c6034, type: 3}
   Audio: {fileID: 8300000, guid: 78f3538f882bd4e338139efbba2ff97b, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: "Y\u0131lan"
   Image: {fileID: 21300000, guid: ee42cadfc2aa346bda71834fa4ee6c02, type: 3}
-  Audio: {fileID: 8300000, guid: e94bc71640a424d8792ec8933eb496c2, type: 3}
+  Audio: {fileID: 8300000, guid: 55797ae3d11ea497caaaa91891ed3037, type: 3}

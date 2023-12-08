@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 2
   Label: Yaprak
   Image: {fileID: 21300000, guid: e1771ce29a33f41f6a1d06473875e0cb, type: 3}
-  Audio: {fileID: 8300000, guid: 6b6e308b749484084b243cf55a28976a, type: 3}
+  Audio: {fileID: 8300000, guid: 02e9d568f67754093843de35d1135a59, type: 3}

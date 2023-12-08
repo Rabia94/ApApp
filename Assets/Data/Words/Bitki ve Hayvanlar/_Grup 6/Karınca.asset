@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 6
   Label: "Kar\u0131nca"
   Image: {fileID: 21300000, guid: 7ba38f9f0f9ca44ff9d0d2d51fd109be, type: 3}
-  Audio: {fileID: 8300000, guid: 9e96845d447cb4628a4fb2849bce57a3, type: 3}
+  Audio: {fileID: 8300000, guid: 6c3da761e9a514b2fa831cc2e81dc818, type: 3}

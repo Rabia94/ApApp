@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Aslan
   Image: {fileID: 21300000, guid: c82ded9195c6747c1a2851737687f1bb, type: 3}
-  Audio: {fileID: 8300000, guid: 3cfada7f2d2954a979f246416e0b7e8f, type: 3}
+  Audio: {fileID: 8300000, guid: 37959a4462690415ab4252bc5fac8d88, type: 3}

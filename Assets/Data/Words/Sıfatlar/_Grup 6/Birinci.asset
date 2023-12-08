@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Birinci
+  m_EditorClassIdentifier: 
+  Category: 5
+  Group: 6
+  Label: Birinci
+  Image: {fileID: 21300000, guid: f6fc20ccc82384c7e816f646be3f3242, type: 3}
+  Audio: {fileID: 8300000, guid: 90145b6ac034b4f5b86a079f7cf659cd, type: 3}

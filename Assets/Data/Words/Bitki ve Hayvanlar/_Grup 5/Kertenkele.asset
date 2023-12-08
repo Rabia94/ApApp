@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: Kertenkele
   Image: {fileID: 21300000, guid: 8ab9348ada0c4496cad32ecedd183440, type: 3}
-  Audio: {fileID: 8300000, guid: a6a03748c1c064dae8d21f190896596c, type: 3}
+  Audio: {fileID: 8300000, guid: 6749e47439abe4aaa8366eb58f854c6c, type: 3}

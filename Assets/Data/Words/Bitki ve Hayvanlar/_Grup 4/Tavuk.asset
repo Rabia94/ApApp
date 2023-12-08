@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 4
   Label: Tavuk
   Image: {fileID: 21300000, guid: 2a2956a290471409c9dae3a97faa3517, type: 3}
-  Audio: {fileID: 8300000, guid: c9d20b2d075054676a6dcb8cdc5fcb9e, type: 3}
+  Audio: {fileID: 8300000, guid: ca43c9d676bea41149084134407baed2, type: 3}

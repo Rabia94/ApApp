@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: "Al\u0131n"
+  m_EditorClassIdentifier: 
+  Category: 9
+  Group: 1
+  Label: "Al\u0131n"
+  Image: {fileID: 21300000, guid: 429c6940edff6473bb08107502c6f514, type: 3}
+  Audio: {fileID: 8300000, guid: c3c17ef98a82a45babd65be4ef07be86, type: 3}

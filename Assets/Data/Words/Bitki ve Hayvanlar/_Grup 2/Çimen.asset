@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 2
   Group: 2
   Label: "\xC7imen"
-  Image: {fileID: 21300000, guid: 25481c661e6a04eb99d4bf43f1fced4c, type: 3}
-  Audio: {fileID: 8300000, guid: 987fe46412a814dbfa05d2b714b367d5, type: 3}
+  Image: {fileID: 21300000, guid: 660a4255b94504e40901c915d7719851, type: 3}
+  Audio: {fileID: 8300000, guid: 9d52db32fcd454294834af1eefb5e3f4, type: 3}

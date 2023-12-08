@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 4
   Label: "Mart\u0131"
   Image: {fileID: 21300000, guid: 7c67e07e0f3094bd6a9a171c2cb00ead, type: 3}
-  Audio: {fileID: 8300000, guid: fe20d31c476c84184a1ebfd3f512c623, type: 3}
+  Audio: {fileID: 8300000, guid: 7ed84a1a7965e4e458f60be478f8e01d, type: 3}

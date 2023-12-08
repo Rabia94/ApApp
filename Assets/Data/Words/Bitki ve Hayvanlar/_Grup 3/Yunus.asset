@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Yunus
   Image: {fileID: 21300000, guid: 249708168e6974374b6c9dfc0a058279, type: 3}
-  Audio: {fileID: 8300000, guid: cf636ffc9fd964570838db925f42e713, type: 3}
+  Audio: {fileID: 8300000, guid: 2e576f402c301458bb864c846851354f, type: 3}

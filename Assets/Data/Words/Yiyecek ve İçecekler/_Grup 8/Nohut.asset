@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Nohut
+  m_EditorClassIdentifier: 
+  Category: 1
+  Group: 8
+  Label: Nohut
+  Image: {fileID: 21300000, guid: 9aa52baccba5442fa87fa0f4f6447983, type: 3}
+  Audio: {fileID: 8300000, guid: 96dc62417c0d24f86bcaace6f81ffc97, type: 3}
