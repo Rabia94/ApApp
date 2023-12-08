@@ -11,7 +11,7 @@ public class GroupButton : MonoBehaviour
     
     public void SetButton(int index, int nextSceneIndex)
     {
-        _text.SetText("Grup "+index);
+        _text.SetText("Bölüm "+index);
         _index = index;
         _nextSceneIndex = nextSceneIndex;
         GetComponent<Button>().onClick.AddListener(OnButtonClick);
