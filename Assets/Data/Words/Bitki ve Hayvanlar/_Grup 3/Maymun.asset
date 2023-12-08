@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Maymun
   Image: {fileID: 21300000, guid: 66ec08f6fd9dd4e61a1e90f54a2eafa5, type: 3}
-  Audio: {fileID: 8300000, guid: 69863352207bf4216813afc884afd400, type: 3}
+  Audio: {fileID: 8300000, guid: dc0acdd8443f446eaa4341944029259c, type: 3}

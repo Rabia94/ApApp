@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 2
   Group: 1
   Label: "E\u015Fek"
-  Image: {fileID: 21300000, guid: e0ccff2dca2714dccb50c888d7913130, type: 3}
-  Audio: {fileID: 8300000, guid: 14c043a6a52e14a3e91b45037e0a7123, type: 3}
+  Image: {fileID: 21300000, guid: 00b074f2fa7344530a3972f6285f01ea, type: 3}
+  Audio: {fileID: 8300000, guid: 5058ace6a4f0a46ada983b54c14f826b, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: Kuyruk
   Image: {fileID: 21300000, guid: cc7843330de344e1281092fd93ef1cb1, type: 3}
-  Audio: {fileID: 8300000, guid: bb9ec060497f0456e9aee8385cecc881, type: 3}
+  Audio: {fileID: 8300000, guid: 09777e66e5a1a4bec8546bb8c25e2f9d, type: 3}

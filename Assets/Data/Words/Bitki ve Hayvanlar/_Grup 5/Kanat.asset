@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: Kanat
   Image: {fileID: 21300000, guid: dc7b46bdfb54e44638ada9bd244bc01f, type: 3}
-  Audio: {fileID: 8300000, guid: ddeefac0c78fc42b99ac384e0b0864a2, type: 3}
+  Audio: {fileID: 8300000, guid: 2d9d847c36f7a436b8ae3145032b60f4, type: 3}

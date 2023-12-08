@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 2
   Label: "Ayakkab\u0131"
   Image: {fileID: 21300000, guid: be348b23b0a11420faf362bc1f1f68b9, type: 3}
-  Audio: {fileID: 8300000, guid: 961885256960940ad993579b410d0905, type: 3}
+  Audio: {fileID: 8300000, guid: a15dcb5d5496640dbbb0d32539e2c183, type: 3}

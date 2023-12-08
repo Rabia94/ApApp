@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: "Pen\xE7e"
   Image: {fileID: 21300000, guid: d19ca9f5fe62540c08521d4f75d0f62c, type: 3}
-  Audio: {fileID: 8300000, guid: 3d7291f264dfb4f23bfe05cad0bf6102, type: 3}
+  Audio: {fileID: 8300000, guid: 2531ab200599143119cdfbd482b32ce9, type: 3}

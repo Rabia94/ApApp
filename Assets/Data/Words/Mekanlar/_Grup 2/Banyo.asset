@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Banyo
+  m_EditorClassIdentifier: 
+  Category: 0
+  Group: 2
+  Label: Banyo
+  Image: {fileID: 21300000, guid: b602d9dcbdbff4b2ca82ad4748d4f013, type: 3}
+  Audio: {fileID: 8300000, guid: 07804bedbed8b4a369a55e89716440fc, type: 3}

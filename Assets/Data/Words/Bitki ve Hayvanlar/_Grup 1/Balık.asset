@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 1
   Label: "Bal\u0131k"
   Image: {fileID: 21300000, guid: 82c361342f14749b183b311c2a30f9d4, type: 3}
-  Audio: {fileID: 8300000, guid: f8f3d55944eda47dea02230a1bbd2dae, type: 3}
+  Audio: {fileID: 8300000, guid: 74c0087e6367641beb7c12ca19d131cd, type: 3}

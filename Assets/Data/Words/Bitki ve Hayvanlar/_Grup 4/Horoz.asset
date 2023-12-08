@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 4
   Label: Horoz
   Image: {fileID: 21300000, guid: 0eaa9a11ae35942ddaf80a255e79e581, type: 3}
-  Audio: {fileID: 8300000, guid: 9e0e3fa3a705d4fb6be631f6ff9521be, type: 3}
+  Audio: {fileID: 8300000, guid: 6f3f6e237efa840cc99c1c336dd7cc29, type: 3}

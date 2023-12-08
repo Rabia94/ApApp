@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 6
   Label: Ahtapot
   Image: {fileID: 21300000, guid: fea7df7eb4fc84a3abb837d9222e80c7, type: 3}
-  Audio: {fileID: 8300000, guid: 36cf113fa27a24b429016ddc7eeeee83, type: 3}
+  Audio: {fileID: 8300000, guid: 49f778ac7f2464d68a06d48ed4903759, type: 3}

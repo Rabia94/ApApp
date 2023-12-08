@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 4
   Label: Kartal
   Image: {fileID: 21300000, guid: 0bd2d6b77bae44b61a0b1e5fc50fc20b, type: 3}
-  Audio: {fileID: 8300000, guid: 0124803d58ef54b2daf60d47464d448e, type: 3}
+  Audio: {fileID: 8300000, guid: 14af82083dd434bf8bee62aae6752521, type: 3}

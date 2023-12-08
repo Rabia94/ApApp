@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 2
   Group: 2
   Label: "\xC7i\xE7ek"
-  Image: {fileID: 21300000, guid: 85abedaf78bfe4251a357f3a91692026, type: 3}
+  Image: {fileID: 21300000, guid: af135f41ff5a4478998a337b15885242, type: 3}
   Audio: {fileID: 8300000, guid: a330ea2286987483389ce2a4edf1ceca, type: 3}

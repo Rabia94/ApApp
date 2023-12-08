@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 6
   Group: 1
   Label: Metro
-  Image: {fileID: 21300000, guid: de3a7298f3c94447bb16df030ea261b3, type: 3}
+  Image: {fileID: 21300000, guid: 066110c1a77a24e009d433fc1416f597, type: 3}
   Audio: {fileID: 8300000, guid: b3d9bab44debb4bc7b5821b388e1b54a, type: 3}

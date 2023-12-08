@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: "Kaplumba\u011Fa"
   Image: {fileID: 21300000, guid: 695f701759f8a45498bfb1432859d1de, type: 3}
-  Audio: {fileID: 8300000, guid: ec1c57b8344d54e8e88ae67c69a93e5d, type: 3}
+  Audio: {fileID: 8300000, guid: 77835ad0955fa4d31b6209ead387d3f5, type: 3}

@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 2
   Group: 6
   Label: "B\xF6cek"
-  Image: {fileID: 21300000, guid: d09189ec7ef7e4174b8696f0b8dcc2ab, type: 3}
-  Audio: {fileID: 8300000, guid: 8d56bdf17c19e49fb9b3ea7783b270d2, type: 3}
+  Image: {fileID: 21300000, guid: 221b2cfb408ce44a2befe129403503cf, type: 3}
+  Audio: {fileID: 8300000, guid: be09aa57011534605ba510c3239e39c5, type: 3}

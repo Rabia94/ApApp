@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 6
   Label: Salyangoz
   Image: {fileID: 21300000, guid: 81fd5ffae7b284d44b7d873cb0615b63, type: 3}
-  Audio: {fileID: 8300000, guid: 537b6d971b84f446c9a82255824eac2a, type: 3}
+  Audio: {fileID: 8300000, guid: ad80555970a134c0bbe7d0a76b3e2e18, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 1
   Label: Kedi
   Image: {fileID: 21300000, guid: 406937f1d7a5842449ca27e99c8a6876, type: 3}
-  Audio: {fileID: 8300000, guid: a3de0027c9eef444dab0883b017000f0, type: 3}
+  Audio: {fileID: 8300000, guid: a32bbb1e50db94d6e869380c42db30b3, type: 3}

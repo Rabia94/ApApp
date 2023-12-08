@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: "Kurba\u011Fa"
   Image: {fileID: 21300000, guid: 131385d90bef54f219843dffb58a0bba, type: 3}
-  Audio: {fileID: 8300000, guid: 3ac8a3b5a63734ed4b06acc37ca802ef, type: 3}
+  Audio: {fileID: 8300000, guid: e38a36a4d25cc461689ec072eea3cbf3, type: 3}

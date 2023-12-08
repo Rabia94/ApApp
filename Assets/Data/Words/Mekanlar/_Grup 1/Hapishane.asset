@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Hapishane
+  m_EditorClassIdentifier: 
+  Category: 7
+  Group: 1
+  Label: Hapishane
+  Image: {fileID: 21300000, guid: 84f9b18dfb8ea49b2a25f8583f069d5a, type: 3}
+  Audio: {fileID: 8300000, guid: 7d9baed3018694ada822e91e25f729bc, type: 3}

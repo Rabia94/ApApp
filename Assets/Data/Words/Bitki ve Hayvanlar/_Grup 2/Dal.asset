@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 2
   Label: Dal
   Image: {fileID: 21300000, guid: 26bdcd66f42fc4f20acccce0773d1720, type: 3}
-  Audio: {fileID: 8300000, guid: 90d508b86d8cc428ab3e16627ac084db, type: 3}
+  Audio: {fileID: 8300000, guid: 0f550bb004a854738b6137713e15ee81, type: 3}

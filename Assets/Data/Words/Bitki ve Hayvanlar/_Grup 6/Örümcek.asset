@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 6
   Label: "\xD6r\xFCmcek"
   Image: {fileID: 21300000, guid: 1f1dd5402f2344501902a2a60ec686f7, type: 3}
-  Audio: {fileID: 8300000, guid: 7bc9b40a0c5754fa48c12af765646133, type: 3}
+  Audio: {fileID: 8300000, guid: 33765fdfe3ff648f69dc5114882c2902, type: 3}

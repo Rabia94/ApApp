@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 6
   Label: Solucan
   Image: {fileID: 21300000, guid: de7aba867c59f4b1cb2aec30bdb05969, type: 3}
-  Audio: {fileID: 8300000, guid: 68deb4a1cd92145c5829d431ad823295, type: 3}
+  Audio: {fileID: 8300000, guid: b86f5054039674ecab4df38355a5c82a, type: 3}

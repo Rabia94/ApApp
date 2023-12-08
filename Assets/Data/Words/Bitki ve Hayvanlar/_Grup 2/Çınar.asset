@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 2
   Group: 2
   Label: "\xC7\u0131nar"
-  Image: {fileID: 21300000, guid: f594acb1f8c3249b0bd5a2d017b139b4, type: 3}
-  Audio: {fileID: 8300000, guid: 392e0eba795084d06b43c2bdfcaf73eb, type: 3}
+  Image: {fileID: 21300000, guid: fe2950b3cd36a7d428fd9888278804eb, type: 3}
+  Audio: {fileID: 8300000, guid: 1bdbeb80683e049ee9f2c4da665019b3, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 4
   Label: Leylek
   Image: {fileID: 21300000, guid: 8bd6c00140d074d5dad5d510e56b0882, type: 3}
-  Audio: {fileID: 8300000, guid: 17c2c4a0807464e0690f89c9c6683929, type: 3}
+  Audio: {fileID: 8300000, guid: 329e5f60d39f749ac8f0d0792e9117be, type: 3}

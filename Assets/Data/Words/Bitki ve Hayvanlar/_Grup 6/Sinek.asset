@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 6
   Label: Sinek
   Image: {fileID: 21300000, guid: 9337138ae652149a8a8e6f7a06f91643, type: 3}
-  Audio: {fileID: 8300000, guid: eabc716c24ddc47bda5f813d234ee35c, type: 3}
+  Audio: {fileID: 8300000, guid: 45e54c2e33e704405b50848fb33ef674, type: 3}

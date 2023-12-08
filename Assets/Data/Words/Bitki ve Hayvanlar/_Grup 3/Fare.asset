@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Fare
   Image: {fileID: 21300000, guid: ce6c23a91de8b4a70b3cd45a94590811, type: 3}
-  Audio: {fileID: 8300000, guid: 01d5118e4f2834bce8a1b0c8562d3103, type: 3}
+  Audio: {fileID: 8300000, guid: 94790590a04924cb1b73a11f59c1352c, type: 3}

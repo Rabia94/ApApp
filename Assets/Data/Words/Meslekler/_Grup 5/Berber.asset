@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Berber
+  m_EditorClassIdentifier: 
+  Category: 11
+  Group: 5
+  Label: Berber
+  Image: {fileID: 21300000, guid: 41ef7ed0d8bfb41a1a23f99b00d59c83, type: 3}
+  Audio: {fileID: 8300000, guid: c5271adf34bce477da1e5f68d2386408, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Kaplan
   Image: {fileID: 21300000, guid: 9abeba6df58514a12b244fd904a506fe, type: 3}
-  Audio: {fileID: 8300000, guid: 9a4513f89db514d65a5baf0eb86d2a4f, type: 3}
+  Audio: {fileID: 8300000, guid: 5ae5b381140d746a1aaba6669420bfab, type: 3}

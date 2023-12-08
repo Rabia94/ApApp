@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 3
   Label: Tilki
   Image: {fileID: 21300000, guid: c18f0acc0504e42c59aa42d5701d0a0d, type: 3}
-  Audio: {fileID: 8300000, guid: bf98034f56644496882cc65cc564a016, type: 3}
+  Audio: {fileID: 8300000, guid: a0ce6c8f746014685861e20d9dec41ab, type: 3}

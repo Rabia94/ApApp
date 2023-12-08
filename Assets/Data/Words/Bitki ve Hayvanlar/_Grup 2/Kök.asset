@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 2
   Group: 2
   Label: "K\xF6k"
-  Image: {fileID: 21300000, guid: 5c788474cde444266951a17f5b581121, type: 3}
+  Image: {fileID: 21300000, guid: 113bec3a5966f4e0786a34fc2b80c307, type: 3}
   Audio: {fileID: 8300000, guid: a43e1f85396db480ca70c62b2a46f1f0, type: 3}
