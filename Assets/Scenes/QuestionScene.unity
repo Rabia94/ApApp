@@ -1603,6 +1603,10 @@ MonoBehaviour:
   correctAudioClip: {fileID: 8300000, guid: 7ec0144b6ff5e43c08ecd5239eee8991, type: 3}
   clueText: {fileID: 107293330}
   clueButton: {fileID: 1294877065}
+  currentData:
+    CorrectWord: {fileID: 0}
+    AllWords: []
+    QuestionIndex: 0
 --- !u!4 &1407184027
 Transform:
   m_ObjectHideFlags: 0
@@ -2011,11 +2015,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 623520591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 25, y: 217.66347}
-  m_SizeDelta: {x: 30, y: -435.32706}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 20, y: -20}
+  m_SizeDelta: {x: 30, y: 40.672943}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1611265572
 MonoBehaviour:
   m_ObjectHideFlags: 0
