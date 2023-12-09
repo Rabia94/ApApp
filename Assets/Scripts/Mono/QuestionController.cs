@@ -1,5 +1,8 @@
 using System.Threading.Tasks;
+using NonMono;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestionController : MonoBehaviour
 {
@@ -8,8 +11,10 @@ public class QuestionController : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] private AudioClip wrongAudioClip;
     [SerializeField] private AudioClip correctAudioClip;
-    
-    QuestionData currentData;
+    [SerializeField] private TMP_Text clueText;
+    [SerializeField]Button clueButton;
+
+    [SerializeField] QuestionData currentData;
     int currentQuestionIndex = 1;
 
     private void Awake()
@@ -19,6 +24,16 @@ public class QuestionController : MonoBehaviour
         questionView.ToggleCorrectAnswerPanel(false);
     }
 
+    private void OnEnable()
+    {
+        clueButton.onClick.AddListener(ShowClue);
+    }
+
+    private void OnDisable()
+    {
+        clueButton.onClick.RemoveListener(ShowClue);
+    }
+
     [ContextMenu(nameof(SetWordData))]
     public void SetWordData()
     {
@@ -26,6 +41,8 @@ public class QuestionController : MonoBehaviour
         currentData.QuestionIndex = currentQuestionIndex;
         questionView.SetCurrentQuestion(currentData, OnWrongAnswer,OnCorrectAnswer);
         PlayCurrentWordAudio();
+        clueText.SetText(currentData.CorrectWord.Label);
+        HideClue();
     }
 
     public QuestionData GetWordData()
@@ -81,5 +98,21 @@ public class QuestionController : MonoBehaviour
     void ShowResultPage()
     {
         questionView.ShowResultPage(questionModel.ResultData);
+        int score = (int)(questionModel.ResultData.CorrectAnswerCount * 100f / QuestionSettings.QuestionCount);
+        int highestValue = SaveManager.GetCategoryResult(QuestionSettings.Category, QuestionSettings.GroupIndex);
+        if (score > highestValue)
+        {
+            SaveManager.SaveCategoryResult(QuestionSettings.Category, QuestionSettings.GroupIndex,score);
+        }
+    }
+
+    void ShowClue()
+    {
+        PlayCurrentWordAudio();
+        clueText.enabled=true;
+    }
+    void HideClue()
+    {
+        clueText.enabled=false;
     }
 }

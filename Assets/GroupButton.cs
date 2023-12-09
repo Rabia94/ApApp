@@ -9,9 +9,9 @@ public class GroupButton : MonoBehaviour
     private int _index;
     private int _nextSceneIndex;
     
-    public void SetButton(int index, int nextSceneIndex)
+    public void SetButton(int index, int result, int nextSceneIndex)
     {
-        _text.SetText("Bölüm "+index);
+        _text.SetText($"Bölüm {index}   %{result}");
         _index = index;
         _nextSceneIndex = nextSceneIndex;
         GetComponent<Button>().onClick.AddListener(OnButtonClick);

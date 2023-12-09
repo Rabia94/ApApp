@@ -1,3 +1,4 @@
+using NonMono;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,13 +24,20 @@ public class CategoryController : MonoBehaviour
     {
         foreach (CategoryButtonData categoryButtonData in _categoryButtonDatas)
         {
-            Instantiate(_categoryButtonPrefab, _parent).SetButton(categoryButtonData,SetGroupPanel);
+            var groupIDs = _questionModel.GetCategoryGroups(categoryButtonData.Category);
+            float result = 0;
+            for (int i = 0; i < groupIDs.Count; i++)
+            {
+                result += SaveManager.GetCategoryResult(categoryButtonData.Category, groupIDs[i]);
+            }
+            result /= groupIDs.Count;
+            Instantiate(_categoryButtonPrefab, _parent).SetButton(categoryButtonData,(int)result,SetGroupPanel);
         }
     }
 
     void SetGroupPanel(CategoryButtonData categoryButtonData)
     {
-        _groupPanelController.SetPanel(_questionModel.GetCategoryGroups(categoryButtonData.Category));
+        _groupPanelController.SetPanel(_questionModel,categoryButtonData.Category);
         QuestionSettings.Category = categoryButtonData.Category;
         _parent.gameObject.SetActive(false);
         _groupPanelController.gameObject.SetActive(true);
