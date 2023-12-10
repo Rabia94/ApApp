@@ -1,8 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using NonMono;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class QuestionController : MonoBehaviour
 {
@@ -17,10 +21,26 @@ public class QuestionController : MonoBehaviour
     [SerializeField] QuestionData currentData;
     int currentQuestionIndex = 1;
     private float startTime;
-
+    private List<Word> subCategoryWords;
+    private Dictionary<Word, int> wordCountDictionary=new();
     private void Awake()
     {
+        Initialize();
+    }
+
+    private void Start()
+    {
         Invoke(nameof(SetWordData), 1);
+    }
+
+    private void Initialize()
+    {
+        HideClue();
+        subCategoryWords = questionModel.GetCategoryGroupWords(QuestionSettings.Category,QuestionSettings.GroupIndex);
+        foreach (var word in subCategoryWords)
+        {
+            wordCountDictionary.Add(word,0);
+        }
         startTime = Time.time + 1;
     }
 
@@ -34,7 +54,6 @@ public class QuestionController : MonoBehaviour
         clueButton.onClick.RemoveListener(ShowClue);
     }
 
-    [ContextMenu(nameof(SetWordData))]
     public void SetWordData()
     {
         currentData = GetWordData();
@@ -47,7 +66,21 @@ public class QuestionController : MonoBehaviour
 
     public QuestionData GetWordData()
     {
-        QuestionData data= questionModel.GetRandomQuestionData();
+        List<Word> availableWords = new();
+        foreach (var wordCountPair in wordCountDictionary)
+        {
+            if (wordCountPair.Value < QuestionSettings.WordRepeatCount)
+            {
+                availableWords.Add(wordCountPair.Key);
+            }
+        }
+
+        Word word = availableWords[Random.Range(0, availableWords.Count)];
+
+        QuestionData data= questionModel.GetRandomQuestionData(word);
+        wordCountDictionary[word] += 1;
+        
+        
         data.AllWords = data.AllWords.RandomizeList();
         return data;
     }
@@ -57,7 +90,7 @@ public class QuestionController : MonoBehaviour
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.WrongAnswerCount++;
         Destroy(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
-        audioSource.PlayOneShot(wrongAudioClip);
+        audioSource.PlayOneShot(wrongAudioClip,.2f);
         if (questionView.LeftAnswerCount <= 2)
         {
             questionView.IncreaseCellSize();
@@ -79,7 +112,7 @@ public class QuestionController : MonoBehaviour
 
     async void OnCorrectAnswer()
     {
-        audioSource.PlayOneShot(correctAudioClip);
+        audioSource.PlayOneShot(correctAudioClip,.1f);
         await Task.Delay(1500);
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.CorrectAnswerCount++;
@@ -98,7 +131,7 @@ public class QuestionController : MonoBehaviour
 
     public void PlayCurrentWordAudio()
     {
-        audioSource.PlayOneShot(currentData.CorrectWord.Audio);
+        audioSource.PlayOneShot(currentData.CorrectWord.Audio,1);
     }
 
     void ShowResultPage()

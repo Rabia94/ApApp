@@ -10,11 +10,8 @@ public class QuestionModel
     List<Word> words=>wordList.Words;
     public ResultData ResultData=new ResultData();
 
-    public QuestionData GetRandomQuestionData()
+    public QuestionData GetRandomQuestionData(Word word)
     {
-        var categoryWords = GetCategoryGroupWords(QuestionSettings.Category,QuestionSettings.GroupIndex);
-        var word = categoryWords.GetRandomElement();
-
 
         switch (QuestionSettings.Difficulty)
         {

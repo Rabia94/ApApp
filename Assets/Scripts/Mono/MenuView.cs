@@ -28,7 +28,7 @@ public class MenuView : MonoBehaviour
         //SetNumberOfChoices();
         SetNumberOfQuestions();
         ListenValueChange();
-        UpdateQualitySettings();
+        UpdateQuestionSettings();
     }
 
     void SetCategory()
@@ -66,23 +66,22 @@ public class MenuView : MonoBehaviour
 
     void ListenValueChange()
     {
-        category.onValueChanged.AddListener((x)=> { UpdateQualitySettings(); });
-        difficulty.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
-        numberOfChoices.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
-        numberOfQuestions.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
-        kelimeTekrarSayısı.onValueChanged.AddListener((x) => { UpdateQualitySettings(); });
+        category.onValueChanged.AddListener((x)=> { UpdateQuestionSettings(); });
+        difficulty.onValueChanged.AddListener((x) => { UpdateQuestionSettings(); });
+        numberOfChoices.onValueChanged.AddListener((x) => { UpdateQuestionSettings(); });
+        numberOfQuestions.onValueChanged.AddListener((x) => { UpdateQuestionSettings(); });
+        kelimeTekrarSayısı.onValueChanged.AddListener((x) => { UpdateQuestionSettings(); });
     }
 
-    private void UpdateQualitySettings()
+    private void UpdateQuestionSettings()
     {
 //        QuestionSettings.Category = (Category)category.value;
         QuestionSettings.Difficulty = (Difficulty)difficulty.value;
         int cevapSayısı;
         Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out cevapSayısı);
         QuestionSettings.AnswerCount = cevapSayısı;         
-        int tekrar;
-        Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out tekrar);
-        QuestionSettings.QuestionCount = tekrar * _questionModel.GetSelectedCategoryGroupWords().Count;
+        Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out QuestionSettings.WordRepeatCount);
+        QuestionSettings.QuestionCount = QuestionSettings.WordRepeatCount * _questionModel.GetSelectedCategoryGroupWords().Count;
         Debug.Log(QuestionSettings.Category);
         Debug.Log(QuestionSettings.Difficulty);
         Debug.Log(QuestionSettings.AnswerCount);

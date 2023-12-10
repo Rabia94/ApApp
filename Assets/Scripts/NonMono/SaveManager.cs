@@ -8,7 +8,7 @@ namespace NonMono
         
         public static void SaveUserData()
         {
-            PlayerPrefs.SetString("saveKey",JsonUtility.ToJson(typeof(UserData)));
+            PlayerPrefs.SetString(saveKey,JsonUtility.ToJson(MainManager.UserData));
         }
      
         public static UserData GetUserData()
