@@ -37,7 +37,7 @@ public class QuestionModel
     QuestionData SetEasyQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i <  QuestionSettings.AnswerCount - 1; i++)
+        for (int i = 0; i <  QuestionSettings.NumberOfOptions - 1; i++)
         {
             data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
@@ -47,7 +47,7 @@ public class QuestionModel
     QuestionData SetMediumQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
+        for (int i = 0; i < QuestionSettings.NumberOfOptions - 1; i++)
         {
             data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
         }
@@ -57,7 +57,7 @@ public class QuestionModel
     QuestionData SetHardQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.AnswerCount - 1; i++)
+        for (int i = 0; i < QuestionSettings.NumberOfOptions - 1; i++)
         {
             data.AllWords.Add(GetSameSubCategoryWord(word.Category, word.Group, data.AllWords));
         }

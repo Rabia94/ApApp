@@ -8,8 +8,7 @@ public class QuestionView : MonoBehaviour
     [SerializeField] GridLayoutGroup wordHolder;
     [SerializeField] WordOptionView wordPrefab;
     [SerializeField] TMP_Text questionText;
-    [SerializeField] GameObject resultPanel;
-    [SerializeField] TMP_Text resultText;
+    [SerializeField] ResultView resultPanel;
     [SerializeField] private float cellSizeMultiplier = 1.75f;
 
     public int LeftAnswerCount => wordHolder.transform.childCount;
@@ -30,7 +29,7 @@ public class QuestionView : MonoBehaviour
             Destroy(wordHolder.transform.GetChild(i).gameObject);
         }
 
-        for (int i = 0; i < QuestionSettings.AnswerCount; i++)
+        for (int i = 0; i < QuestionSettings.NumberOfOptions; i++)
         {
             var word = questionData.AllWords[i];
             if (word == questionData.CorrectWord)
@@ -55,13 +54,8 @@ public class QuestionView : MonoBehaviour
     
     public void ShowResultPage(ResultData resultData)
     {
-        resultPanel.SetActive(true);
-        resultText.text = "Zorluk: " + resultData.Difficulty+ "\nŞık Sayısı: " + resultData.AnswerCount+ "\nSoru Sayısı: " 
-            + resultData.QuestionCount + "\nDoğru Cevap: " + resultData.CorrectAnswerCount + "\nYanlış Cevap: " + resultData.WrongAnswerCount
-            + "\nGeçen Süre: " + resultData.Time.ToString("0.0") + " sn"
-            + "\nSoru Başına Geçen Süre: " + (resultData.Time/ resultData.QuestionCount).ToString("0.0") + " sn";
+        resultPanel.ShowResultPage(resultData);
     }
-    
 
     public void IncreaseCellSize()
     {

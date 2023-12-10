@@ -57,7 +57,7 @@ public class MenuView : MonoBehaviour
 
     void SetNumberOfChoices()
     {
-        numberOfChoices.value = QuestionSettings.AnswerCount-2;
+        numberOfChoices.value = QuestionSettings.NumberOfOptions-2;
     }
     void SetNumberOfQuestions()
     {
@@ -76,12 +76,12 @@ public class MenuView : MonoBehaviour
     private void UpdateQuestionSettings()
     {
         QuestionSettings.Difficulty = (Difficulty)difficulty.value;
-        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out QuestionSettings.AnswerCount );
+        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out QuestionSettings.NumberOfOptions );
         Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out QuestionSettings.WordRepeatCount);
         QuestionSettings.QuestionCount = QuestionSettings.WordRepeatCount * _questionModel.GetSelectedCategoryGroupWords().Count;
         Debug.Log(QuestionSettings.Category);
         Debug.Log(QuestionSettings.Difficulty);
-        Debug.Log(QuestionSettings.AnswerCount);
+        Debug.Log(QuestionSettings.NumberOfOptions);
         Debug.Log(QuestionSettings.QuestionCount);
     }
 }
