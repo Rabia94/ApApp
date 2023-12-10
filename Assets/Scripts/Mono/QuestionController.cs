@@ -62,6 +62,7 @@ public class QuestionController : MonoBehaviour
         PlayCurrentWordAudio();
         clueText.SetText(currentData.CorrectWord.Label);
         HideClue();
+        questionView.SetConstraint(GridLayoutGroup.Constraint.FixedRowCount);
     }
 
     public QuestionData GetWordData()
