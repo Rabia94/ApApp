@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 3
   Group: 5
-  Label: "Bula\u015F\u0131k Makinesi"
-  Image: {fileID: 21300000, guid: 1d9249a634841504c954b2160adbc6c4, type: 3}
-  Audio: {fileID: 8300000, guid: 30fa035253a817343a0bc5d1a0259ff2, type: 3}
+  Label: Ocak
+  Image: {fileID: 21300000, guid: 561af2e735a32dd4ba90977a0032ea17, type: 3}
+  Audio: {fileID: 8300000, guid: f6c919c6f4ccebb45818b8c835503020, type: 3}

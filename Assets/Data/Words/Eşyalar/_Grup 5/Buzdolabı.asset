@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 3
   Group: 5
-  Label: "Bula\u015F\u0131k Makinesi"
-  Image: {fileID: 21300000, guid: 1d9249a634841504c954b2160adbc6c4, type: 3}
-  Audio: {fileID: 8300000, guid: 30fa035253a817343a0bc5d1a0259ff2, type: 3}
+  Label: "Buzdolab\u0131"
+  Image: {fileID: 21300000, guid: 6d75114cbb889b24ba57510a15e7b507, type: 3}
+  Audio: {fileID: 8300000, guid: 8539b012205df794b960b04158f874f4, type: 3}
