@@ -27,10 +27,11 @@ public class WordList : ScriptableObject
             string path = UnityEditor.AssetDatabase.GUIDToAssetPath(guid);
             Word word = UnityEditor.AssetDatabase.LoadAssetAtPath<Word>(path);
             words.Add(word);
-            // Now you can work with your Word object
         }
-
+        UnityEditor.EditorUtility.SetDirty(this);
+        UnityEditor.AssetDatabase.SaveAssets();
     }
+
 #endif
 
 }
