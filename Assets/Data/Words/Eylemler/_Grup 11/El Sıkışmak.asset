@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: "El S\u0131k\u0131\u015Fmak"
+  m_EditorClassIdentifier: 
+  Category: 4
+  Group: 11
+  Label: "El S\u0131k\u0131\u015Fmak"
+  Image: {fileID: 21300000, guid: ac8dc725a945e954084422ce9875d285, type: 3}
+  Audio: {fileID: 8300000, guid: ac0e7790b9493b84385acf93ba3c171c, type: 3}

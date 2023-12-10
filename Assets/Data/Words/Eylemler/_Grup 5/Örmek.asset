@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: "\xD6rmek"
+  m_EditorClassIdentifier: 
+  Category: 4
+  Group: 5
+  Label: "\xD6rmek"
+  Image: {fileID: 21300000, guid: e3f6e203a2786fb46a8aa8961e2fbb0f, type: 3}
+  Audio: {fileID: 8300000, guid: b31964026cc583f4e8e6bb8753f08560, type: 3}
