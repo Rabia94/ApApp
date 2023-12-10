@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: "S\u0131ra"
+  m_EditorClassIdentifier: 
+  Category: 8
+  Group: 9
+  Label: "S\u0131ra"
+  Image: {fileID: 21300000, guid: 6d5e238f4193453459572817c04b3791, type: 3}
+  Audio: {fileID: 8300000, guid: 5d17314d9816775418c7ce0f7b08f4de, type: 3}
