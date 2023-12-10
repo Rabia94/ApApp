@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
+  m_Name: Kalem
+  m_EditorClassIdentifier: 
+  Category: 3
+  Group: 3
+  Label: Kalem
+  Image: {fileID: 21300000, guid: 1bdc089f909bbd94ab00158679cbf6cf, type: 3}
+  Audio: {fileID: 8300000, guid: 347ea71e4dea8b745a09f329e10eaee6, type: 3}
