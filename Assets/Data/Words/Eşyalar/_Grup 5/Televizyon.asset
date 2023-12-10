@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
-  m_Name: "B\u0131\xE7ak"
+  m_Name: Televizyon
   m_EditorClassIdentifier: 
   Category: 3
-  Group: 2
-  Label: "B\u0131\xE7ak"
-  Image: {fileID: 21300000, guid: 5e58ee192b6b5d944b94d738d66aca1d, type: 3}
-  Audio: {fileID: 8300000, guid: ce051e4c9669bcf4bb488fd7471ceb64, type: 3}
+  Group: 5
+  Label: "Bula\u015F\u0131k Makinesi"
+  Image: {fileID: 21300000, guid: 1d9249a634841504c954b2160adbc6c4, type: 3}
+  Audio: {fileID: 8300000, guid: 30fa035253a817343a0bc5d1a0259ff2, type: 3}
