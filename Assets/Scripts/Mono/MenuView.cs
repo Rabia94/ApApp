@@ -1,8 +1,6 @@
 ﻿using System;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 using static TMPro.TMP_Dropdown;
 
 public class MenuView : MonoBehaviour

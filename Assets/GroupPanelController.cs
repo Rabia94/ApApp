@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NonMono;
-using Unity.VisualScripting;
+﻿using NonMono;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class GroupPanelController : MonoBehaviour
 {
@@ -13,6 +8,10 @@ public class GroupPanelController : MonoBehaviour
     [SerializeField] private int _nextSceneIndex=4;
     public void SetPanel(QuestionModel questionModel,Category category)
     {
+        for (int i = 0; i < _parent.childCount; i++)
+        {
+            Destroy(_parent.GetChild(i).gameObject);
+        }
         var categoryGroups= questionModel.GetCategoryGroups(category);
         for (int i = 0; i < categoryGroups.Count; i++)
         {

@@ -31,7 +31,8 @@ public class CategoryController : MonoBehaviour
                 result += SaveManager.GetCategoryResult(categoryButtonData.Category, groupIDs[i]);
             }
             result /= groupIDs.Count;
-            Instantiate(_categoryButtonPrefab, _parent).SetButton(categoryButtonData,(int)result,SetGroupPanel);
+            CategoryButton categoryButton =Instantiate(_categoryButtonPrefab, _parent);
+            categoryButton.SetButton(categoryButtonData,(int)result,SetGroupPanel);
         }
     }
 

@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CategoryScene.unity
     guid: fe023fc276a020847b5158ac7813101d
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
+    path: Assets/Scenes/QuestionMenuScene.unity
     guid: bd6034d69c2824830bf70c3150d37993
   - enabled: 1
     path: Assets/Scenes/QuestionScene.unity

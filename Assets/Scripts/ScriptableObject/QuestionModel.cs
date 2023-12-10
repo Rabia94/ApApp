@@ -12,7 +12,7 @@ public class QuestionModel
 
     public QuestionData GetRandomQuestionData()
     {
-        var categoryWords = GetCategoryWords(QuestionSettings.Category);
+        var categoryWords = GetCategoryGroupWords(QuestionSettings.Category,QuestionSettings.GroupIndex);
         var word = categoryWords.GetRandomElement();
 
 
@@ -75,7 +75,7 @@ public class QuestionModel
 
         while (questionWords.Contains(randomWord))
         {
-            randomWord = categoryWords.GetRandomElement();
+            randomWord = SubCategoryWords.GetRandomElement();
         }
         return randomWord;
     }

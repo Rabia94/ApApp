@@ -1,3 +1,4 @@
+using NonMono;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -84,7 +85,7 @@ public class PatientInfoManager : MonoBehaviour
             YazmakdaZorluk = _yazmakdaZorluk.options[_yazmakdaZorluk.value].text,
         };
         
-        MainManager.SaveUserData();
+        SaveManager.SaveUserData();
         SceneManager.LoadScene(_welcomeSceneIndex);
     }
 

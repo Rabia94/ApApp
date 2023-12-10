@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b4cf6f57d8c4039a9cf6d32f893a04, type: 3}
   m_Name: Banyo
   m_EditorClassIdentifier: 
-  Category: 0
+  Category: 7
   Group: 2
   Label: Banyo
   Image: {fileID: 21300000, guid: b602d9dcbdbff4b2ca82ad4748d4f013, type: 3}
