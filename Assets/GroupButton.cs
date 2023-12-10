@@ -16,7 +16,7 @@ public class GroupButton : MonoBehaviour
     {
         _text.SetText($"Bölüm {index}");
         progressSlider.SetValue(result);
-        passedImage.SetActive(result>90);
+        passedImage.SetActive(result>=90);
         _index = index;
         _nextSceneIndex = nextSceneIndex;
         GetComponent<Button>().onClick.AddListener(OnButtonClick);

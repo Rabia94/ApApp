@@ -19,7 +19,7 @@ public class QuestionController : MonoBehaviour
     [SerializeField]Button clueButton;
 
     [SerializeField] QuestionData currentData;
-    int currentQuestionIndex = 1;
+    private int currentQuestionIndex { get; set; } = 1;
     private float startTime;
     private List<Word> subCategoryWords;
     private Dictionary<Word, int> wordCountDictionary=new();
@@ -91,23 +91,30 @@ public class QuestionController : MonoBehaviour
             questionModel.ResultData.WrongAnswerCount++;
         Destroy(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
         audioSource.PlayOneShot(wrongAudioClip,.2f);
+        await Task.Delay(5);
         if (questionView.LeftAnswerCount <= 2)
         {
             questionView.IncreaseCellSize();
+            questionView.SetConstraint(GridLayoutGroup.Constraint.FixedColumnCount);
+        }
+        else
+        {
+            questionView.SetConstraint(GridLayoutGroup.Constraint.FixedRowCount);
         }
         if (questionView.LeftAnswerCount == 1)
         {
             questionView.MakeNotInteractableLastAnswer();
-            await Task.Delay(500);
             ShowClue();
-        }
-        PlayCurrentWordAudio();
-        await Task.Delay(1000);
-        Debug.Log(questionView.LeftAnswerCount);
-        if (questionView.LeftAnswerCount == 1)
-        {
+            await Task.Delay(2000);
+            currentQuestionIndex++;
             SetWordData();
         }
+        else
+        {
+            PlayCurrentWordAudio();
+        }
+        await Task.Delay(500);
+
     }
 
     async void OnCorrectAnswer()
@@ -115,7 +122,10 @@ public class QuestionController : MonoBehaviour
         audioSource.PlayOneShot(correctAudioClip,.1f);
         await Task.Delay(1500);
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
+        {
             questionModel.ResultData.CorrectAnswerCount++;
+        }
+        
         currentQuestionIndex++;
 
         if (currentQuestionIndex<=QuestionSettings.QuestionCount)

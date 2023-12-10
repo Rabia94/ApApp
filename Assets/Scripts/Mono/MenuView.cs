@@ -75,11 +75,8 @@ public class MenuView : MonoBehaviour
 
     private void UpdateQuestionSettings()
     {
-//        QuestionSettings.Category = (Category)category.value;
         QuestionSettings.Difficulty = (Difficulty)difficulty.value;
-        int cevapSayısı;
-        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out cevapSayısı);
-        QuestionSettings.AnswerCount = cevapSayısı;         
+        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out QuestionSettings.AnswerCount );
         Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out QuestionSettings.WordRepeatCount);
         QuestionSettings.QuestionCount = QuestionSettings.WordRepeatCount * _questionModel.GetSelectedCategoryGroupWords().Count;
         Debug.Log(QuestionSettings.Category);
