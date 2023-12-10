@@ -16,12 +16,12 @@ public class QuestionController : MonoBehaviour
 
     [SerializeField] QuestionData currentData;
     int currentQuestionIndex = 1;
+    private float startTime;
 
     private void Awake()
     {
         Invoke(nameof(SetWordData), 1);
-        questionView.ToggleWrongAnswerPanel(false);
-        questionView.ToggleCorrectAnswerPanel(false);
+        startTime = Time.time + 1;
     }
 
     private void OnEnable()
@@ -57,27 +57,33 @@ public class QuestionController : MonoBehaviour
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.WrongAnswerCount++;
         Destroy(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
-        questionView.ToggleWrongAnswerPanel(true);
         audioSource.PlayOneShot(wrongAudioClip);
-        await Task.Delay(1000);
-        questionView.ToggleWrongAnswerPanel(false);
-        PlayCurrentWordAudio();
-        Debug.Log(questionView.LeftAnswerCount);
         if (questionView.LeftAnswerCount <= 2)
         {
             questionView.IncreaseCellSize();
+        }
+        if (questionView.LeftAnswerCount == 1)
+        {
+            questionView.MakeNotInteractableLastAnswer();
+            await Task.Delay(500);
+            ShowClue();
+        }
+        PlayCurrentWordAudio();
+        await Task.Delay(1000);
+        Debug.Log(questionView.LeftAnswerCount);
+        if (questionView.LeftAnswerCount == 1)
+        {
+            SetWordData();
         }
     }
 
     async void OnCorrectAnswer()
     {
-        questionView.ToggleCorrectAnswerPanel(true);
         audioSource.PlayOneShot(correctAudioClip);
-        await Task.Delay(1000);
+        await Task.Delay(1500);
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.CorrectAnswerCount++;
         currentQuestionIndex++;
-        questionView.ToggleCorrectAnswerPanel(false);
 
         if (currentQuestionIndex<=QuestionSettings.QuestionCount)
         {
@@ -85,7 +91,7 @@ public class QuestionController : MonoBehaviour
         }
         else
         {
-            questionModel.ResultData.Time = Time.time;
+            questionModel.ResultData.Time = Time.time-startTime;
             ShowResultPage();
         }   
     }

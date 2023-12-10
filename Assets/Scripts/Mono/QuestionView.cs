@@ -8,8 +8,6 @@ public class QuestionView : MonoBehaviour
     [SerializeField] GridLayoutGroup wordHolder;
     [SerializeField] WordOptionView wordPrefab;
     [SerializeField] TMP_Text questionText;
-    [SerializeField] GameObject wrongPanel;
-    [SerializeField] GameObject correctPanel;
     [SerializeField] GameObject resultPanel;
     [SerializeField] TMP_Text resultText;
     [SerializeField] private float cellSizeMultiplier = 1.55f;
@@ -48,16 +46,12 @@ public class QuestionView : MonoBehaviour
         }
     }
 
-    public void ToggleWrongAnswerPanel(bool value)
+    public void MakeNotInteractableLastAnswer()
     {
-        wrongPanel.SetActive(value);
+        wordHolder.transform.GetChild(0).GetComponent<Button>().interactable = false;
     }
-
-    public void ToggleCorrectAnswerPanel(bool value)
-    {
-        correctPanel.SetActive(value);
-    }
-
+    
+    
     public void ShowResultPage(ResultData resultData)
     {
         resultPanel.SetActive(true);

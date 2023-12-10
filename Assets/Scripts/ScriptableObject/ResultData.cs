@@ -7,5 +7,5 @@ public struct ResultData
     public int AnswerCount => QuestionSettings.AnswerCount;
     public int CorrectAnswerCount;
     public int WrongAnswerCount;
-    public float Time;
+    public float Time { get; set; }
 }

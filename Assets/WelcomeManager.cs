@@ -10,7 +10,7 @@ public class WelcomeManager : MonoBehaviour
     [SerializeField] private int _gameMenuIndex;
     private void Awake()
     {
-        _welcome.SetText("Hoş geldin "+ MainManager.UserData.Name+ "!");
+        _welcome.SetText("Hoşgeldin "+ MainManager.UserData.Name+ "!");
     }
 
     private void OnEnable()
