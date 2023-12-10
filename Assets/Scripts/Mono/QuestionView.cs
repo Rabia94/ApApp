@@ -10,13 +10,14 @@ public class QuestionView : MonoBehaviour
     [SerializeField] TMP_Text questionText;
     [SerializeField] GameObject resultPanel;
     [SerializeField] TMP_Text resultText;
-    [SerializeField] private float cellSizeMultiplier = 1.55f;
+    [SerializeField] private float cellSizeMultiplier = 1.75f;
 
     public int LeftAnswerCount => wordHolder.transform.childCount;
     private Vector2 defaultCellSize;
     private void Awake()
     {
         defaultCellSize = wordHolder.cellSize;
+        questionText.text = 1 + "/" + QuestionSettings.QuestionCount;
     }
 
     public void SetCurrentQuestion(QuestionData questionData,UnityAction onWrongAnswer, UnityAction onCorrectAnswer)
@@ -65,5 +66,10 @@ public class QuestionView : MonoBehaviour
     public void IncreaseCellSize()
     {
         wordHolder.cellSize *= cellSizeMultiplier;
+    }
+    
+    public void SetConstraint(GridLayoutGroup.Constraint constraint)
+    {
+        wordHolder.constraint = constraint;
     }
 }
