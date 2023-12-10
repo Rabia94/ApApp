@@ -17,10 +17,8 @@ namespace NonMono
             {
                 return JsonUtility.FromJson<UserData>(PlayerPrefs.GetString(saveKey));
             }
-            else
-            {
-                return new UserData();
-            }
+
+            return null;
         }
         
         public static void SaveCategoryResult(Category category, int group, int result)
