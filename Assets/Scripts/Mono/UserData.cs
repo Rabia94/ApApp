@@ -8,6 +8,10 @@ public class UserData
     public string Birthday;
     public string Education;
     public string Employment;
+    public string ScreenTime;
+    public string MobileUsageSkill;
+    public string ActiveDevices;
+    public string UsagePurpose;
     public string AfaziTuru;
     public string SeyDiyor;
     public string DuydugunuAnlamak;

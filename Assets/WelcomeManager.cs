@@ -1,3 +1,4 @@
+using NonMono;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,26 +6,37 @@ using UnityEngine.UI;
 
 public class WelcomeManager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _welcome;
-    [SerializeField] private Button _startButton;
-    [SerializeField] private int _gameMenuIndex;
+    [SerializeField] private TMP_Text welcome;
+    [SerializeField] private Button startButton;
+    [SerializeField] private Button deleteUserDataButton;
+    [SerializeField] private int gameMenuIndex;
     private void Awake()
     {
-        _welcome.SetText("Hoşgeldin "+ MainManager.UserData.Name+ "!");
+        welcome.SetText("Hoşgeldin "+ MainManager.UserData.Name+ "!");
     }
 
     private void OnEnable()
     {
-        _startButton.onClick.AddListener(OpenGameMenu);
+        startButton.onClick.AddListener(OpenGameMenu);
+        deleteUserDataButton.onClick.AddListener(DeleteUserData);
     }
-
+    
     private void OnDisable()
     {
-        _startButton.onClick.RemoveListener(OpenGameMenu);
+        startButton.onClick.RemoveListener(OpenGameMenu);
+        deleteUserDataButton.onClick.RemoveListener(DeleteUserData);
     }
-
+    
+    
     private void OpenGameMenu()
     {
-        SceneManager.LoadScene(_gameMenuIndex);
+        SceneManager.LoadScene(gameMenuIndex);
     }
+    
+    private void DeleteUserData()
+    {
+        SaveManager.DeleteUserData();
+        SceneManager.LoadScene(0);
+    }
+
 }

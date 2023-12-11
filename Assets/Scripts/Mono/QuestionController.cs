@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using NonMono;
 using TMPro;
@@ -23,6 +21,8 @@ public class QuestionController : MonoBehaviour
     private float startTime;
     private List<Word> subCategoryWords;
     private Dictionary<Word, int> wordCountDictionary=new();
+
+    float currentWordAudioCalledTime;
     private void Awake()
     {
         Initialize();
@@ -56,6 +56,7 @@ public class QuestionController : MonoBehaviour
 
     public void SetWordData()
     {
+        currentWordAudioCalledTime = 0;
         currentData = GetWordData();
         currentData.QuestionIndex = currentQuestionIndex;
         questionView.SetCurrentQuestion(currentData, OnWrongAnswer,OnCorrectAnswer);
@@ -91,7 +92,7 @@ public class QuestionController : MonoBehaviour
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
             questionModel.ResultData.WrongAnswerCount++;
         Destroy(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
-        audioSource.PlayOneShot(wrongAudioClip,.2f);
+        audioSource.PlayOneShot(wrongAudioClip);
         await Task.Delay(5);
         if (questionView.LeftAnswerCount <= 2)
         {
@@ -120,7 +121,7 @@ public class QuestionController : MonoBehaviour
 
     async void OnCorrectAnswer()
     {
-        audioSource.PlayOneShot(correctAudioClip,.1f);
+        audioSource.PlayOneShot(correctAudioClip);
         await Task.Delay(1500);
         if (currentQuestionIndex > questionModel.ResultData.WrongAnswerCount + questionModel.ResultData.CorrectAnswerCount)
         {
@@ -142,7 +143,14 @@ public class QuestionController : MonoBehaviour
 
     public void PlayCurrentWordAudio()
     {
+        float lastCalledInterval = Time.time - currentWordAudioCalledTime;
+        if (lastCalledInterval < 1)
+        {
+            Debug.Log($"Audio called multiple time. Last called {lastCalledInterval} seconds ago");
+            return;
+        }
         audioSource.PlayOneShot(currentData.CorrectWord.Audio,1);
+        currentWordAudioCalledTime = Time.time;
     }
 
     void ShowResultPage()

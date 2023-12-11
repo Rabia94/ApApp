@@ -73,9 +73,9 @@ public class PatientInfoManager : MonoBehaviour
         {
             Name = _name.text,
             Gender = _gender.options[_gender.value].text,
-            Birthday = _name.text,
+            Birthday = $"{_day.text}/{_month.text}/{_year.text}",
             Education = _education.options[_education.value].text,
-            Employment = _name.text,
+            Employment = _employment.text,
             AfaziTuru = _afaziTuru.options[_afaziTuru.value].text,
             SeyDiyor = _seyDiyor.options[_seyDiyor.value].text,
             DuydugunuAnlamak = _duydugunuAnlamak.options[_duydugunuAnlamak.value].text,

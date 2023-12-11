@@ -31,5 +31,9 @@ namespace NonMono
            return PlayerPrefs.GetInt(category.ToString()+group,0);
         }
 
+        public static void DeleteUserData()
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 }

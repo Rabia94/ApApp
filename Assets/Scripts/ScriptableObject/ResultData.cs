@@ -9,4 +9,5 @@ public struct ResultData
     public int CorrectAnswerCount;
     public int WrongAnswerCount;
     public float Time { get; set; }
+    public float TimePerQuestion => Time / QuestionCount;
 }
