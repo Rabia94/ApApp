@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 2
   Label: "\xC7atal"
-  Image: {fileID: 21300000, guid: 23c30d6a80c5e7d4fa75c7614c4a44a6, type: 3}
+  Image: {fileID: 21300000, guid: d97bb276bbf98cd48963d3dd0b1259fd, type: 3}
   Audio: {fileID: 8300000, guid: e1352e58dae45ce47a6d9b44732a1bf3, type: 3}

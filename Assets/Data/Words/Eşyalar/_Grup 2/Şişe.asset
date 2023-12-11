@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 2
   Label: "\u015Ei\u015Fe"
-  Image: {fileID: 21300000, guid: a4236062aee57204eaca887d5eb641ed, type: 3}
+  Image: {fileID: 21300000, guid: ad565054685660f49a30e13bfc7677eb, type: 3}
   Audio: {fileID: 8300000, guid: 49d164111eb3e35479210b60c5d544ba, type: 3}

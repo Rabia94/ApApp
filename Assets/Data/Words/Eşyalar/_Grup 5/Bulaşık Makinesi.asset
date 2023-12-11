@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 5
   Label: "Bula\u015F\u0131k Makinesi"
-  Image: {fileID: 21300000, guid: 363d654608d84f149b6ce7e766a15b26, type: 3}
+  Image: {fileID: 21300000, guid: e4aca10ce3497f34887ccda1397323f2, type: 3}
   Audio: {fileID: 8300000, guid: 68c2234055c73004180f916250274abf, type: 3}
