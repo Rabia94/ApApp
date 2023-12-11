@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 10
   Label: "S\xFCzge\xE7"
   Image: {fileID: 21300000, guid: b8d18cbbad143f64b9c2a97f97e5476e, type: 3}
-  Audio: {fileID: 8300000, guid: 9420f60dd637f9342af5c00cbb39ca2f, type: 3}
+  Audio: {fileID: 8300000, guid: 5dbc9145e9c3a4f3da902ebeddd07317, type: 3}

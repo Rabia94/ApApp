@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: "\xDCt\xFC"
   Image: {fileID: 21300000, guid: 18732855e26fe3b41a65a4a796082e93, type: 3}
-  Audio: {fileID: 8300000, guid: 9d37cacffb223cc489c42533eccca4f7, type: 3}
+  Audio: {fileID: 8300000, guid: 145fcd2b9d8244858b18e343795de3ef, type: 3}

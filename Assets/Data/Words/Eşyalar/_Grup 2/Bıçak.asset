@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 2
   Label: "B\u0131\xE7ak"
   Image: {fileID: 21300000, guid: 271f81376b40e97489cf599757b265e6, type: 3}
-  Audio: {fileID: 8300000, guid: 8b73a5d81ecfc3a41b6ccd3fb5cebc1d, type: 3}
+  Audio: {fileID: 8300000, guid: 5912e229119bc4e28ac99cde2f12e946, type: 3}
