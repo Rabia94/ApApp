@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using VInspector;
 
@@ -32,6 +31,29 @@ public class WordList : ScriptableObject
         UnityEditor.AssetDatabase.SaveAssets();
     }
 
+    [Button]
+    public void FindMissingObjects()
+    {
+        foreach (var word in words)
+        {
+            if (string.IsNullOrWhiteSpace(word.Label))
+            {
+                Debug.Log($"{word.name} Label eksik",word);
+            }
+            if (word.Image == null)
+            {
+                Debug.Log($"{word.name} Image eksik",word);
+            }
+            if (word.Audio == null)
+            {
+                Debug.Log($"{word.name} Audio eksik",word);
+            }
+            
+        }
+    }
+
+    
+    
 #endif
 
 }

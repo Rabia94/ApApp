@@ -4,7 +4,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using VInspector;
+#if UNITY_EDITOR
 using VInspector.Libs;
+#endif 
 
 public class Survey : MonoBehaviour
 {
@@ -81,6 +83,7 @@ public class Survey : MonoBehaviour
 
     }
 
+    #if UNITY_EDITOR
     [Button] 
     void SetIdsFromString()
     {
@@ -92,6 +95,7 @@ public class Survey : MonoBehaviour
             formFieldDictionary[keyList[i]]=idList[i].Remove(" ");
         }
     }
+    #endif 
     
 }
 
