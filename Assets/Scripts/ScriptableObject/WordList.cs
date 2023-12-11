@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
+#if UNITY_EDITOR
+using VInspector.Libs;
+#endif
 
 [CreateAssetMenu(menuName = "ApApp/WordList")]
 public class WordList : ScriptableObject
@@ -52,6 +55,23 @@ public class WordList : ScriptableObject
         }
     }
 
+    [Button]
+    public void FindMissMatchingNames()
+    {
+        foreach (var word in words)
+        {
+            if (word.Image ==null ||word.Label.ToLower().Remove(" ")!=word.Image.name.ToLower().Remove(" "))
+            {
+                Debug.Log($"{word.name} Image isimle eşleşmedi ({word.Image})",word);
+            }
+            if (word.Audio ==null || word.Label.ToLower().Remove(" ")!=word.Audio.name.ToLower().Remove(" "))
+            {
+                Debug.Log($"{word.name} Audio isimle eşleşmedi ({word.Audio})",word);
+            }
+            
+        }
+    }
+    
     
     
 #endif
