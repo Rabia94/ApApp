@@ -18,6 +18,10 @@ public class PatientInfoManager : MonoBehaviour
     [SerializeField] private TMP_InputField _year;
     [SerializeField] private TMP_Dropdown _education;
     [SerializeField] private TMP_InputField _employment;
+    
+    
+    
+    
     [SerializeField] private TMP_Dropdown _afaziTuru;
     [SerializeField] private TMP_Dropdown _seyDiyor;
     [SerializeField] private TMP_Dropdown _duydugunuAnlamak;
@@ -29,7 +33,7 @@ public class PatientInfoManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _nextButton.onClick.AddListener(NextPage);
+        _nextButton.onClick.AddListener(DemographicNextPage);
         _previousButton.onClick.AddListener(PreviousPage);
         _saveButton.onClick.AddListener(SaveUserData);
         _demographicPanel.SetActive(true);
@@ -38,12 +42,12 @@ public class PatientInfoManager : MonoBehaviour
 
     private void OnDisable()
     {
-        _nextButton.onClick.RemoveListener(NextPage);
+        _nextButton.onClick.RemoveListener(DemographicNextPage);
         _previousButton.onClick.RemoveListener(PreviousPage);
         _saveButton.onClick.RemoveListener(SaveUserData);
     }
 
-    void NextPage()
+    void DemographicNextPage()
     {
         if (SetErrorIfEmpty(_name) && SetErrorIfEmpty(_day) && SetErrorIfEmpty(_month) &&
             SetErrorIfEmpty(_year)&& SetErrorIfEmpty(_employment))
@@ -61,6 +65,11 @@ public class PatientInfoManager : MonoBehaviour
         }
     }
 
+    void DeviceUsageNextPage()
+    {
+     
+    }
+    
     void PreviousPage()
     {
         _demographicPanel.SetActive(true);
