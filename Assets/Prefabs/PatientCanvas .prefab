@@ -712,7 +712,7 @@ GameObject:
   - component: {fileID: 3699594292257817795}
   - component: {fileID: 7825694244166174902}
   m_Layer: 5
-  m_Name: Toggle (4)
+  m_Name: "Oyun konsollar\u0131"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 6426619895417039655}
   - component: {fileID: 2780720606229924384}
   m_Layer: 5
-  m_Name: Toggle (1)
+  m_Name: Telefon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1268,8 +1268,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 217.81438, y: 0}
-  m_SizeDelta: {x: 395.62875, y: 0}
+  m_AnchoredPosition: {x: 209.12276, y: 0}
+  m_SizeDelta: {x: 378.2455, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5990867051711670308
 CanvasRenderer:
@@ -1327,12 +1327,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 13.8
   m_fontSizeBase: 15
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 13.8
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -2440,7 +2440,7 @@ MonoBehaviour:
     m_Top: 10
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -3516,7 +3516,7 @@ GameObject:
   - component: {fileID: 9033181879402020068}
   - component: {fileID: 1592173218494264428}
   m_Layer: 5
-  m_Name: Toggle (3)
+  m_Name: Tablet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4621,7 +4621,7 @@ GameObject:
   - component: {fileID: 6972267723061506489}
   - component: {fileID: 8586813664257586891}
   m_Layer: 5
-  m_Name: Toggle (2)
+  m_Name: Bilgisayar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5953,7 +5953,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "K\xF6t\xFC"
+  m_text: 0-2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6301,11 +6301,13 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: '0-2 saat '
+    - m_Text: "K\xF6t\xFC"
       m_Image: {fileID: 0}
-    - m_Text: '2-4 saat '
+    - m_Text: Orta
       m_Image: {fileID: 0}
-    - m_Text: "5 saat ve \xFCzeri"
+    - m_Text: "\u0130yi"
+      m_Image: {fileID: 0}
+    - m_Text: "\xC7ok iyi"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6866,7 +6868,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &71929388507503225
 CanvasRenderer:
@@ -7471,7 +7473,7 @@ GameObject:
   - component: {fileID: 3052414090073368522}
   - component: {fileID: 8815662079236594515}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: Televizyon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8039,7 +8041,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3107956142290522513
 CanvasRenderer:
@@ -8903,7 +8905,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5241229382493868523
 CanvasRenderer:
@@ -9374,7 +9376,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5974250040668290217
 CanvasRenderer:
@@ -10491,7 +10493,7 @@ GameObject:
   - component: {fileID: 1148081355550211933}
   - component: {fileID: 1134535898458408700}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: Haber alma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13325,7 +13327,7 @@ GameObject:
   - component: {fileID: 3301133885843701501}
   - component: {fileID: 1392917456079010991}
   m_Layer: 5
-  m_Name: Toggle (2)
+  m_Name: Oyun oynama
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14030,8 +14032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 217.81438, y: 0}
-  m_SizeDelta: {x: 395.62875, y: 0}
+  m_AnchoredPosition: {x: 209.12276, y: 0}
+  m_SizeDelta: {x: 378.2455, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6106724198979753536
 MonoBehaviour:
@@ -14048,7 +14050,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
@@ -15545,7 +15547,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5929542570939598874
 CanvasRenderer:
@@ -15975,8 +15977,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 198.68562, y: 0}
-  m_SizeDelta: {x: 357.37125, y: 0}
+  m_AnchoredPosition: {x: 191.06184, y: 0}
+  m_SizeDelta: {x: 342.1237, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5096121542059941724
 MonoBehaviour:
@@ -15993,7 +15995,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
@@ -16969,13 +16971,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "K\xF6t\xFC"
+    - m_Text: 0-2
       m_Image: {fileID: 0}
-    - m_Text: Orta
+    - m_Text: 2-4
       m_Image: {fileID: 0}
-    - m_Text: "\u0130yi"
-      m_Image: {fileID: 0}
-    - m_Text: "\xC7ok iyi"
+    - m_Text: "5 \xDCzeri"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17096,26 +17096,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 259d83d1d01914945abf3555279ef7f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextButton: {fileID: 902006240965482911}
-  _previousButton: {fileID: 6413319704277829383}
-  _saveButton: {fileID: 4764927664319967238}
-  _demographicPanel: {fileID: 8272541310169041263}
-  _patientInfoPanel: {fileID: 3853576017185135626}
-  _name: {fileID: 1408715474255762524}
-  _gender: {fileID: 5818138909611777180}
-  _day: {fileID: 1012690412328489861}
-  _month: {fileID: 6098404145050503883}
-  _year: {fileID: 2649763171897523748}
-  _education: {fileID: 1555959471173826078}
-  _employment: {fileID: 2874255110029908242}
-  _afaziTuru: {fileID: 3391915739265124637}
-  _seyDiyor: {fileID: 4936613923960664716}
-  _duydugunuAnlamak: {fileID: 5568306940376648771}
-  _konusmaktaZorluk: {fileID: 6475375574094195514}
-  _konusmaktaTekrar: {fileID: 7028148901838120106}
-  _okumaktaZorluk: {fileID: 736779880333822689}
-  _yazmakdaZorluk: {fileID: 660745606226273730}
-  _welcomeSceneIndex: 2
+  demographicPanelNextButton: {fileID: 902006240965482911}
+  patientInfoPanelPreviousButton: {fileID: 6413319704277829383}
+  saveButton: {fileID: 4764927664319967238}
+  demographicPanel: {fileID: 8272541310169041263}
+  deviceUsageView: {fileID: 6089218833503136466}
+  patientInfoPanel: {fileID: 3853576017185135626}
+  userName: {fileID: 1408715474255762524}
+  gender: {fileID: 5818138909611777180}
+  day: {fileID: 1012690412328489861}
+  month: {fileID: 6098404145050503883}
+  year: {fileID: 2649763171897523748}
+  education: {fileID: 1555959471173826078}
+  employment: {fileID: 2874255110029908242}
+  afaziTuru: {fileID: 3391915739265124637}
+  seyDiyor: {fileID: 4936613923960664716}
+  duydugunuAnlamak: {fileID: 5568306940376648771}
+  konusmaktaZorluk: {fileID: 6475375574094195514}
+  konusmaktaTekrar: {fileID: 7028148901838120106}
+  okumaktaZorluk: {fileID: 736779880333822689}
+  yazmakdaZorluk: {fileID: 660745606226273730}
+  welcomeSceneIndex: 2
 --- !u!1 &6057515093198855779
 GameObject:
   m_ObjectHideFlags: 0
@@ -17265,8 +17266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 197.81438, y: 0}
-  m_SizeDelta: {x: 395.62875, y: 0}
+  m_AnchoredPosition: {x: 189.12276, y: 0}
+  m_SizeDelta: {x: 378.2455, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4100436276462260374
 CanvasRenderer:
@@ -18934,7 +18935,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6946263059005629720
 CanvasRenderer:
@@ -19015,8 +19016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 178.68562, y: 0}
-  m_SizeDelta: {x: 357.37125, y: 0}
+  m_AnchoredPosition: {x: 171.06184, y: 0}
+  m_SizeDelta: {x: 342.1237, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2694743837309647585
 CanvasRenderer:
@@ -20238,7 +20239,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7787109591922421518
 CanvasRenderer:
@@ -20505,7 +20506,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &610129855308243159
 CanvasRenderer:
@@ -20792,7 +20793,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3393835776139159074
 CanvasRenderer:
@@ -20882,7 +20883,7 @@ GameObject:
   - component: {fileID: 4593979077298472305}
   - component: {fileID: 1996829236081791382}
   m_Layer: 5
-  m_Name: Toggle (1)
+  m_Name: "Sosyal medya kullan\u0131m\u0131"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21228,6 +21229,7 @@ GameObject:
   - component: {fileID: 6255118750172398157}
   - component: {fileID: 7140360696611386622}
   - component: {fileID: 5361826530393833720}
+  - component: {fileID: 6089218833503136466}
   m_Layer: 5
   m_Name: DeviceUsageInfo
   m_TagString: Untagged
@@ -21322,6 +21324,34 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &6089218833503136466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839955044713979887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e32bf2eedf604d6fb5bcbaf38dca67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PreviousButton: {fileID: 9173542289970783906}
+  NextButton: {fileID: 8996140677115547738}
+  screenTime: {fileID: 6825719722861283822}
+  mobileUsageSkill: {fileID: 5732472660402804447}
+  activeDevices:
+  - {fileID: 1814624803812024611}
+  - {fileID: 7308462179227420756}
+  - {fileID: 6552647311165038443}
+  - {fileID: 1890151982635648228}
+  - {fileID: 4278588107965561834}
+  usagePurpose:
+  - {fileID: 7923871473842856289}
+  - {fileID: 8228493724654428047}
+  - {fileID: 5678106993617399851}
+  - {fileID: 4584042373327486389}
+  - {fileID: 8250193087073079858}
 --- !u!1 &7856021695895260733
 GameObject:
   m_ObjectHideFlags: 0
@@ -21336,7 +21366,7 @@ GameObject:
   - component: {fileID: 6836403233386417966}
   - component: {fileID: 6294719009253300618}
   m_Layer: 5
-  m_Name: Toggle (4)
+  m_Name: "\u0130leti\u015Fim"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22667,7 +22697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0-2 saat '
+  m_text: "K\xF6t\xFC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23034,7 +23064,7 @@ GameObject:
   - component: {fileID: 6760946570159821647}
   - component: {fileID: 7607186108479598147}
   m_Layer: 5
-  m_Name: Toggle (3)
+  m_Name: "Ara\u015Ft\u0131rma"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23792,7 +23822,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6506713421903906131
 CanvasRenderer:
@@ -24385,8 +24415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 198.68562, y: 0}
-  m_SizeDelta: {x: 357.37125, y: 0}
+  m_AnchoredPosition: {x: 191.06184, y: 0}
+  m_SizeDelta: {x: 342.1237, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5566497441994595239
 CanvasRenderer:
@@ -24444,12 +24474,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 13.8
   m_fontSizeBase: 15
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 13.8
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -25176,7 +25206,7 @@ MonoBehaviour:
     m_Top: 10
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1

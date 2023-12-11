@@ -2,100 +2,113 @@ using NonMono;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class PatientInfoManager : MonoBehaviour
 {
-    [SerializeField] private Button _nextButton;
-    [SerializeField] private Button _previousButton;
-    [SerializeField] private Button _saveButton;
-    [SerializeField] private GameObject _demographicPanel;
-    [SerializeField] private GameObject _patientInfoPanel;
-    [SerializeField] private TMP_InputField _name;
-    [SerializeField] private TMP_Dropdown _gender;
-    [SerializeField] private TMP_InputField _day;
-    [SerializeField] private TMP_InputField _month;
-    [SerializeField] private TMP_InputField _year;
-    [SerializeField] private TMP_Dropdown _education;
-    [SerializeField] private TMP_InputField _employment;
-    
-    
-    
-    
-    [SerializeField] private TMP_Dropdown _afaziTuru;
-    [SerializeField] private TMP_Dropdown _seyDiyor;
-    [SerializeField] private TMP_Dropdown _duydugunuAnlamak;
-    [SerializeField] private TMP_Dropdown _konusmaktaZorluk;
-    [SerializeField] private TMP_Dropdown _konusmaktaTekrar;
-    [SerializeField] private TMP_Dropdown _okumaktaZorluk;
-    [SerializeField] private TMP_Dropdown _yazmakdaZorluk;
-    [SerializeField] private int _welcomeSceneIndex;
+    //buralar farklı kodlata ayrılması lazım. şimdilik çok dokunmuyorum.
+    [SerializeField] private Button demographicPanelNextButton;
+    [SerializeField] private Button patientInfoPanelPreviousButton; 
+    [SerializeField] private Button saveButton;
+    [SerializeField] private GameObject demographicPanel;
+    [SerializeField] private DeviceUsageView deviceUsageView;
+    [SerializeField] private GameObject patientInfoPanel;
+    [SerializeField] private TMP_InputField userName;
+    [SerializeField] private TMP_Dropdown gender;
+    [SerializeField] private TMP_InputField day;
+    [SerializeField] private TMP_InputField month;
+    [SerializeField] private TMP_InputField year;
+    [SerializeField] private TMP_Dropdown education;
+    [SerializeField] private TMP_InputField employment;
+    [SerializeField] private TMP_Dropdown afaziTuru;
+    [SerializeField] private TMP_Dropdown seyDiyor;
+    [SerializeField] private TMP_Dropdown duydugunuAnlamak;
+    [SerializeField] private TMP_Dropdown konusmaktaZorluk;
+    [SerializeField] private TMP_Dropdown konusmaktaTekrar;
+    [SerializeField] private TMP_Dropdown okumaktaZorluk;
+    [SerializeField] private TMP_Dropdown yazmakdaZorluk;
+    [SerializeField] private int welcomeSceneIndex;
 
     private void OnEnable()
     {
-        _nextButton.onClick.AddListener(DemographicNextPage);
-        _previousButton.onClick.AddListener(PreviousPage);
-        _saveButton.onClick.AddListener(SaveUserData);
-        _demographicPanel.SetActive(true);
-        _patientInfoPanel.SetActive(false);
+        demographicPanelNextButton.onClick.AddListener(DemographicNextPage);
+        deviceUsageView.NextButton.onClick.AddListener(DeviceUsageNextPage);
+        deviceUsageView.PreviousButton.onClick.AddListener(DeviceUsagePreviousPage);
+        patientInfoPanelPreviousButton.onClick.AddListener(PatientInfoPreviousPage);
+        saveButton.onClick.AddListener(SaveUserData);
+        demographicPanel.SetActive(true);
+        deviceUsageView.gameObject.SetActive(false);
+        patientInfoPanel.SetActive(false);
     }
 
     private void OnDisable()
     {
-        _nextButton.onClick.RemoveListener(DemographicNextPage);
-        _previousButton.onClick.RemoveListener(PreviousPage);
-        _saveButton.onClick.RemoveListener(SaveUserData);
+        demographicPanelNextButton.onClick.RemoveListener(DemographicNextPage);
+        patientInfoPanelPreviousButton.onClick.RemoveListener(PatientInfoPreviousPage);
+        saveButton.onClick.RemoveListener(SaveUserData);
     }
 
     void DemographicNextPage()
     {
-        if (SetErrorIfEmpty(_name) && SetErrorIfEmpty(_day) && SetErrorIfEmpty(_month) &&
-            SetErrorIfEmpty(_year)&& SetErrorIfEmpty(_employment))
+        if (SetErrorIfEmpty(userName) && SetErrorIfEmpty(day) && SetErrorIfEmpty(month) &&
+            SetErrorIfEmpty(year)&& SetErrorIfEmpty(employment))
         {
-            _demographicPanel.SetActive(false);
-            _patientInfoPanel.SetActive(true);
+            demographicPanel.SetActive(false);
+            deviceUsageView.gameObject.SetActive(true);
         }
         else
         {
-            SetErrorIfEmpty(_name);
-            SetErrorIfEmpty(_day);
-            SetErrorIfEmpty(_month);
-            SetErrorIfEmpty(_year);
-            SetErrorIfEmpty(_employment);
+            SetErrorIfEmpty(userName);
+            SetErrorIfEmpty(day);
+            SetErrorIfEmpty(month);
+            SetErrorIfEmpty(year);
+            SetErrorIfEmpty(employment);
         }
     }
-
-    void DeviceUsageNextPage()
+    
+    void PatientInfoPreviousPage()
     {
-     
+        deviceUsageView.gameObject.SetActive(true);
+        patientInfoPanel.SetActive(false);
     }
     
-    void PreviousPage()
+    void DeviceUsagePreviousPage()
     {
-        _demographicPanel.SetActive(true);
-        _patientInfoPanel.SetActive(false);
+        deviceUsageView.gameObject.SetActive(false);
+        demographicPanel.SetActive(true);
+    }
+    
+    void DeviceUsageNextPage()
+    {
+        deviceUsageView.gameObject.SetActive(false);
+        patientInfoPanel.SetActive(true);
     }
     
     void SaveUserData()
     {
         MainManager.UserData = new UserData
         {
-            Name = _name.text,
-            Gender = _gender.options[_gender.value].text,
-            Birthday = $"{_day.text}/{_month.text}/{_year.text}",
-            Education = _education.options[_education.value].text,
-            Employment = _employment.text,
-            AfaziTuru = _afaziTuru.options[_afaziTuru.value].text,
-            SeyDiyor = _seyDiyor.options[_seyDiyor.value].text,
-            DuydugunuAnlamak = _duydugunuAnlamak.options[_duydugunuAnlamak.value].text,
-            KonusmaktaZorluk = _konusmaktaZorluk.options[_konusmaktaZorluk.value].text,
-            KonusmaktaTekrar = _konusmaktaTekrar.options[_konusmaktaTekrar.value].text,
-            OkumaktaZorluk = _okumaktaZorluk.options[_okumaktaZorluk.value].text,
-            YazmakdaZorluk = _yazmakdaZorluk.options[_yazmakdaZorluk.value].text,
+            Name = userName.text,
+            Gender = gender.options[gender.value].text,
+            Birthday = $"{day.text}/{month.text}/{year.text}",
+            Education = education.options[education.value].text,
+            Employment = employment.text,
+            ScreenTime = deviceUsageView.GetScreenTime(),
+            MobileUsageSkill = deviceUsageView.GetMobileUsageSkill(),
+            ActiveDevices = deviceUsageView.GetActiveDevices(),
+            UsagePurpose = deviceUsageView.GetUsagePurpose(),
+            AfaziTuru = afaziTuru.options[afaziTuru.value].text,
+            SeyDiyor = seyDiyor.options[seyDiyor.value].text,
+            DuydugunuAnlamak = duydugunuAnlamak.options[duydugunuAnlamak.value].text,
+            KonusmaktaZorluk = konusmaktaZorluk.options[konusmaktaZorluk.value].text,
+            KonusmaktaTekrar = konusmaktaTekrar.options[konusmaktaTekrar.value].text,
+            OkumaktaZorluk = okumaktaZorluk.options[okumaktaZorluk.value].text,
+            YazmakdaZorluk = yazmakdaZorluk.options[yazmakdaZorluk.value].text,
         };
         
         SaveManager.SaveUserData();
-        SceneManager.LoadScene(_welcomeSceneIndex);
+        SceneManager.LoadScene(welcomeSceneIndex);
     }
 
     

@@ -56,9 +56,6 @@ public class Survey : MonoBehaviour
         formResultDictionary.Add(FormField.SoruSure,resultData.TimePerQuestion.ToString("0.0"));
     }
     
-    
-    
-    
     public void Send(Dictionary<FormField, string> formResult)
     {
         StartCoroutine(Post(formResult));
