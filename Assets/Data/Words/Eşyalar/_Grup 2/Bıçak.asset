@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 2
   Label: "B\u0131\xE7ak"
-  Image: {fileID: 21300000, guid: 5e58ee192b6b5d944b94d738d66aca1d, type: 3}
-  Audio: {fileID: 8300000, guid: ce051e4c9669bcf4bb488fd7471ceb64, type: 3}
+  Image: {fileID: 21300000, guid: 271f81376b40e97489cf599757b265e6, type: 3}
+  Audio: {fileID: 8300000, guid: 8b73a5d81ecfc3a41b6ccd3fb5cebc1d, type: 3}

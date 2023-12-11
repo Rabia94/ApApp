@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 8
   Label: "Tuvalet Ka\u011F\u0131d\u0131"
   Image: {fileID: 21300000, guid: 6082784556f0aad48b1e5458635c225d, type: 3}
-  Audio: {fileID: 8300000, guid: 076a9e8d77d684943adfa12a7fa6ff09, type: 3}
+  Audio: {fileID: 8300000, guid: 9361521fc3454d748ba6b9b67df5a296, type: 3}

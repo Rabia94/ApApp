@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 12
   Label: "S\xF6zl\xFCk"
-  Image: {fileID: 21300000, guid: 9f32337d40aa36b47b855dee7c95929c, type: 3}
-  Audio: {fileID: 8300000, guid: b0990fbd9c695d449a89cd93aab752d1, type: 3}
+  Image: {fileID: 21300000, guid: cf101d04b3c7b7e4a9c220b947b517b6, type: 3}
+  Audio: {fileID: 8300000, guid: 8b6e79c95342f894ab873543348aa94c, type: 3}

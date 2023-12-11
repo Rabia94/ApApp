@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 7
   Label: "\xC7akmak"
   Image: {fileID: 21300000, guid: 2d16e98c891a2014781e8db2b46314aa, type: 3}
-  Audio: {fileID: 8300000, guid: 7243d45691a49e842ba51429fb79b92b, type: 3}
+  Audio: {fileID: 8300000, guid: 7bccbf12273dd9e4dbe75fde423aa573, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 5
   Label: "\xC7ama\u015F\u0131r Makinesi"
   Image: {fileID: 21300000, guid: f32f475da487f3e4f9dbdc5893bdfdac, type: 3}
-  Audio: {fileID: 8300000, guid: 19e1a118b73d5e64ba57ed234990340c, type: 3}
+  Audio: {fileID: 8300000, guid: 954ea4562012cc1498df5e0c83abdad6, type: 3}

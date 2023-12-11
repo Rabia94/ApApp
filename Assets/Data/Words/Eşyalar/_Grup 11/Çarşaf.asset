@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 11
   Label: "\xC7ar\u015Faf"
-  Image: {fileID: 21300000, guid: 58655443ece83be4aa45d2e60121698d, type: 3}
-  Audio: {fileID: 8300000, guid: 3e2d9138cc2307c4caf20a6c8b238937, type: 3}
+  Image: {fileID: 21300000, guid: 7ea62410abae73949a9be58fabfc7fcc, type: 3}
+  Audio: {fileID: 8300000, guid: 1314570d493482d489b429c9d579751b, type: 3}

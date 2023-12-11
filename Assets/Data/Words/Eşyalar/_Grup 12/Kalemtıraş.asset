@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 12
   Label: "Kalemt\u0131ra\u015F"
   Image: {fileID: 21300000, guid: bdb7b097aa4376e4b961aa6848e416ad, type: 3}
-  Audio: {fileID: 8300000, guid: 7f438a2b36a05194a87251f2dad5a5c2, type: 3}
+  Audio: {fileID: 8300000, guid: ddd0c9402f943d9428b1424544b92d26, type: 3}

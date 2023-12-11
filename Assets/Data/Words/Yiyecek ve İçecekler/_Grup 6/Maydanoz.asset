@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 1
   Group: 6
-  Label: Maydonoz
+  Label: Maydanoz
   Image: {fileID: 21300000, guid: 0ddf3c242ec3640a0bb8192316bb5c26, type: 3}
   Audio: {fileID: 8300000, guid: fef147a7faabe4b66ad7a81a02868f0f, type: 3}

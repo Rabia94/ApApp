@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 4
   Group: 9
   Label: "Al\u0131\u015Fveri\u015F Yapmak"
-  Image: {fileID: 21300000, guid: e07a3fa462c88b14d962a9aa6155663b, type: 3}
+  Image: {fileID: 21300000, guid: 52f7f582177cf434cb1ec7bdec6beebc, type: 3}
   Audio: {fileID: 8300000, guid: ed896a36fd5edb540bdb8dd817319583, type: 3}

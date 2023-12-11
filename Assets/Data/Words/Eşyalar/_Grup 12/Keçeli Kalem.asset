@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 12
   Label: "Ke\xE7eli Kalem"
   Image: {fileID: 21300000, guid: 1bae444c37b0f6241a99b8bfddce8ff4, type: 3}
-  Audio: {fileID: 8300000, guid: 9df8bee25a941b942a88701eebfe103c, type: 3}
+  Audio: {fileID: 8300000, guid: 025372d89fd981340942b9559de33a28, type: 3}

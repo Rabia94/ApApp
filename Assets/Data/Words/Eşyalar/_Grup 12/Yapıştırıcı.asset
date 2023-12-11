@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 12
   Label: "Yap\u0131\u015Ft\u0131r\u0131c\u0131"
   Image: {fileID: 21300000, guid: 37d8e415437f81a4c92a315d4dc0ed81, type: 3}
-  Audio: {fileID: 8300000, guid: 731485af021c32740a0cd1659f071e0a, type: 3}
+  Audio: {fileID: 8300000, guid: 54cc0853a326b974095fd6f128a4d1ef, type: 3}

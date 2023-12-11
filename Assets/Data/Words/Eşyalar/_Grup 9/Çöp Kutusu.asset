@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 9
   Label: "\xC7\xF6p Kutusu"
   Image: {fileID: 21300000, guid: 84c122c171a985345974b32ed3b711e1, type: 3}
-  Audio: {fileID: 8300000, guid: 691ea2d9e3ff8764cb6500c76d0374d0, type: 3}
+  Audio: {fileID: 8300000, guid: 508d29802f13a7d4e8c445a52e18b7bb, type: 3}

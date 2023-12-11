@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 14
   Label: "K\xFCvet"
   Image: {fileID: 21300000, guid: 2056395b25c40574e8d7bb23419d363d, type: 3}
-  Audio: {fileID: 8300000, guid: 7cdd6c3e5784dfa43b064c922cb19245, type: 3}
+  Audio: {fileID: 8300000, guid: 61c7501c359fff5409e322b4df467380, type: 3}

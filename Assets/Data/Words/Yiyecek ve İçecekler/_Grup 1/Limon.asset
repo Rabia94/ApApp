@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 1
   Group: 1
-  Label: Biber
+  Label: Limon
   Image: {fileID: 21300000, guid: cbe41f5127d444649896e3c5494f4bd8, type: 3}
   Audio: {fileID: 8300000, guid: 42a6f30f3633441fcb3d2f3782b9dc08, type: 3}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 11
   Group: 6
-  Label: Kareteci
+  Label: Karateci
   Image: {fileID: 21300000, guid: 19e4c8c90082a411cb725d381e6895fa, type: 3}
   Audio: {fileID: 8300000, guid: 371c0640d2aec4d5084faff2db772f98, type: 3}

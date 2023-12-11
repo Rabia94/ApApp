@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 10
   Group: 1
   Label: Abi
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 81223feead227e1428af289566bcdc0b, type: 3}
   Audio: {fileID: 8300000, guid: effe4cabfcb9a4dfb8dee997a8ddc5d6, type: 3}

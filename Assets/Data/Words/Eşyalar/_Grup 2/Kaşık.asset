@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 2
   Label: "Ka\u015F\u0131k"
-  Image: {fileID: 21300000, guid: 41f079187e649474399e32626e2578fc, type: 3}
-  Audio: {fileID: 8300000, guid: 308a729663bc8474db020db30fb82a6f, type: 3}
+  Image: {fileID: 21300000, guid: 7d34939ce7693e9459bcef475f4dffb1, type: 3}
+  Audio: {fileID: 8300000, guid: de3ed9d89b2061d4a990b98bf42379ff, type: 3}

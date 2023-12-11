@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 4
   Label: "U\xE7urtma"
-  Image: {fileID: 21300000, guid: 13953fcbe2695ca4885c92830e0f3b8f, type: 3}
-  Audio: {fileID: 8300000, guid: abdcacc4dffba9f4e888badbc1e617b3, type: 3}
+  Image: {fileID: 21300000, guid: d71a8d7cddf31a948adf2ed9083408ef, type: 3}
+  Audio: {fileID: 8300000, guid: ebb8eaa3818626149be6c194f5e881f3, type: 3}

@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 8
   Label: "Di\u015F F\u0131r\xE7as\u0131"
-  Image: {fileID: 21300000, guid: 92a63c34c56990147b189e9a82d98dd7, type: 3}
-  Audio: {fileID: 8300000, guid: 2356cf06a66ff644cbe7481f9349aaeb, type: 3}
+  Image: {fileID: 21300000, guid: 9ca8f42587b45c340a706880fc744882, type: 3}
+  Audio: {fileID: 8300000, guid: 5b53e69446b4d6f4ab016637495fb34d, type: 3}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 1
   Group: 12
-  Label: "G\xF6zlem"
+  Label: "G\xF6zleme"
   Image: {fileID: 21300000, guid: e066907ccc3a3458fa8db6eab0631333, type: 3}
   Audio: {fileID: 8300000, guid: 9f09284a8da3b411a8b56813a56c8234, type: 3}

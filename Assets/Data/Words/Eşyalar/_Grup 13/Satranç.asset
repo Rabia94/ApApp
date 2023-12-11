@@ -15,5 +15,5 @@ MonoBehaviour:
   Category: 3
   Group: 13
   Label: "Satran\xE7"
-  Image: {fileID: 21300000, guid: 0d4409cfff944924095ff59a0314243d, type: 3}
-  Audio: {fileID: 8300000, guid: c733782aaa740f04ca5b0a5dd7361d05, type: 3}
+  Image: {fileID: 21300000, guid: fefe61c69cd793a43bf7bf458ffc2708, type: 3}
+  Audio: {fileID: 8300000, guid: 567eaddf3a1cab042bd1a6f3a424b1ae, type: 3}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Category: 7
   Group: 1
-  Label: Pijama
+  Label: "Kamp\xFCs"
   Image: {fileID: 21300000, guid: 7a0b8ee0a4d674ad6be93e809a42a024, type: 3}
   Audio: {fileID: 8300000, guid: 1c53ca783891543e6b207a9ba4db8513, type: 3}
