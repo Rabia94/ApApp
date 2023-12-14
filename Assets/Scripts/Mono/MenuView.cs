@@ -25,7 +25,7 @@ public class MenuView : MonoBehaviour
     {
         SetCategory();
         SetDifficulty();
-        //SetNumberOfChoices();
+        SetNumberOfChoices();
         SetNumberOfQuestions();
         ListenValueChange();
         UpdateQuestionSettings();
@@ -57,7 +57,7 @@ public class MenuView : MonoBehaviour
 
     void SetNumberOfChoices()
     {
-        numberOfChoices.value = QuestionSettings.NumberOfOptions-2;
+        numberOfChoices.value = Math.Max(0,(int)(QuestionSettings.NumberOfOptions*.5f)-1);
     }
     void SetNumberOfQuestions()
     {

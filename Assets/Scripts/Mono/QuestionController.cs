@@ -66,7 +66,7 @@ public class QuestionController : MonoBehaviour
         questionView.SetConstraint(GridLayoutGroup.Constraint.FixedRowCount);
     }
 
-    public QuestionData GetWordData()
+    private QuestionData GetWordData()
     {
         List<Word> availableWords = new();
         foreach (var wordCountPair in wordCountDictionary)

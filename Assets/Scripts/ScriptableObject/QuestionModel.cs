@@ -59,7 +59,11 @@ public class QuestionModel
         QuestionData data = SetQuestionData(word);
         for (int i = 0; i < QuestionSettings.NumberOfOptions - 1; i++)
         {
-            data.AllWords.Add(GetSameSubCategoryWord(word.Category, word.Group, data.AllWords));
+            var selectedWord = GetSameSubCategoryWord(word.Category, word.Group, data.AllWords);
+            if (selectedWord != null)
+            {
+                data.AllWords.Add(selectedWord);
+            }
         }
         return data;
     }
@@ -68,6 +72,10 @@ public class QuestionModel
     {
         var categoryWords = GetCategoryWords(category);
         var SubCategoryWords = categoryWords.FindAll(c => c.Group == group);
+        if (SubCategoryWords.Count <= questionWords.Count)
+        {
+            return null;
+        }
         var randomWord = SubCategoryWords.GetRandomElement();
 
         while (questionWords.Contains(randomWord))

@@ -31,6 +31,10 @@ public class QuestionView : MonoBehaviour
 
         for (int i = 0; i < QuestionSettings.NumberOfOptions; i++)
         {
+            if (questionData.AllWords.Count-1 < i)
+            {
+                return;
+            }
             var word = questionData.AllWords[i];
             if (word == questionData.CorrectWord)
             {

@@ -16,4 +16,4 @@ MonoBehaviour:
   Group: 4
   Label: "Bula\u015F\u0131k"
   Image: {fileID: 21300000, guid: 406edf64c04901b41b57bc068cbc07e9, type: 3}
-  Audio: {fileID: 8300000, guid: 895e3d9a8a4ecb54eacd14db20afdc2f, type: 3}
+  Audio: {fileID: 8300000, guid: df30a87a769222c42bd4d787e70db284, type: 3}

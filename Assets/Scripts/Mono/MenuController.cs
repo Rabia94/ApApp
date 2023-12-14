@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] MenuView menuView;
-    [SerializeField] MenuModel questionModel;
-
 
     private void Awake()
     {

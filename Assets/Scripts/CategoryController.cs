@@ -38,7 +38,7 @@ public class CategoryController : MonoBehaviour
 
     void SetGroupPanel(CategoryButtonData categoryButtonData)
     {
-        _groupPanelController.SetPanel(_questionModel,categoryButtonData.Category);
+        _groupPanelController.SetPanel(_questionModel,categoryButtonData.Category,categoryButtonData.CategoryName);
         QuestionSettings.Category = categoryButtonData.Category;
         _parent.gameObject.SetActive(false);
         _groupPanelController.gameObject.SetActive(true);
