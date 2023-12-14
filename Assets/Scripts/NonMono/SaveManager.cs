@@ -4,18 +4,19 @@ namespace NonMono
 {
     public static class SaveManager
     {
-        private static string saveKey = "UserData";
+        private static string userSaveKey = "UserData";
+        private static string questionSettingsSaveKey = "QuestionSettings";
         
         public static void SaveUserData()
         {
-            PlayerPrefs.SetString(saveKey,JsonUtility.ToJson(MainManager.UserData));
+            PlayerPrefs.SetString(userSaveKey,JsonUtility.ToJson(MainManager.UserData));
         }
      
         public static UserData GetUserData()
         {
-            if (PlayerPrefs.HasKey(saveKey))
+            if (PlayerPrefs.HasKey(userSaveKey))
             {
-                return JsonUtility.FromJson<UserData>(PlayerPrefs.GetString(saveKey));
+                return JsonUtility.FromJson<UserData>(PlayerPrefs.GetString(userSaveKey));
             }
 
             return null;
@@ -35,5 +36,20 @@ namespace NonMono
         {
             PlayerPrefs.DeleteAll();
         }
+        
+        public static void SaveQuestionSettings()
+        {
+            PlayerPrefs.SetString(questionSettingsSaveKey,JsonUtility.ToJson(QuestionSettings.Data));
+        }
+        
+        public static QuestionSettingsData GetQuestionSettings()
+        {
+            if (PlayerPrefs.HasKey(questionSettingsSaveKey))
+            {
+                return JsonUtility.FromJson<QuestionSettingsData>(PlayerPrefs.GetString(questionSettingsSaveKey));
+            }
+            return new QuestionSettingsData();
+        }
+
     }
 }

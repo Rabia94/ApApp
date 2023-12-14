@@ -13,7 +13,7 @@ public class QuestionModel
     public QuestionData GetRandomQuestionData(Word word)
     {
 
-        switch (QuestionSettings.Difficulty)
+        switch (QuestionSettings.Data.Difficulty)
         {
             case Difficulty.Kolay:
                 return SetEasyQuestion(word);
@@ -37,7 +37,7 @@ public class QuestionModel
     QuestionData SetEasyQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i <  QuestionSettings.NumberOfOptions - 1; i++)
+        for (int i = 0; i <  QuestionSettings.Data.NumberOfOptions - 1; i++)
         {
             data.AllWords.Add(GetDifferentCategoryWord(word.Category, data.AllWords));
         }
@@ -47,7 +47,7 @@ public class QuestionModel
     QuestionData SetMediumQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.NumberOfOptions - 1; i++)
+        for (int i = 0; i < QuestionSettings.Data.NumberOfOptions - 1; i++)
         {
             data.AllWords.Add(GetSameCategoryWord(word.Category, data.AllWords));
         }
@@ -57,7 +57,7 @@ public class QuestionModel
     QuestionData SetHardQuestion(Word word)
     {
         QuestionData data = SetQuestionData(word);
-        for (int i = 0; i < QuestionSettings.NumberOfOptions - 1; i++)
+        for (int i = 0; i < QuestionSettings.Data.NumberOfOptions - 1; i++)
         {
             var selectedWord = GetSameSubCategoryWord(word.Category, word.Group, data.AllWords);
             if (selectedWord != null)
@@ -164,7 +164,7 @@ public class QuestionModel
     }
     public List<Word> GetSelectedCategoryGroupWords()
     {
-        return GetCategoryGroupWords(QuestionSettings.Category, QuestionSettings.GroupIndex);
+        return GetCategoryGroupWords(QuestionSettings.Data.Category, QuestionSettings.Data.GroupIndex);
     }
 
     public List<Word> GetGroupWords(int group)

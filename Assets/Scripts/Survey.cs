@@ -44,10 +44,10 @@ public class Survey : MonoBehaviour
     
     void AddResultData(ref Dictionary<FormField, string> formResultDictionary,ResultData resultData)
     {
-        formResultDictionary.Add(FormField.Kategori,QuestionSettings.Category.ToString());
-        formResultDictionary.Add(FormField.Bolum,(QuestionSettings.GroupIndex+1).ToString());
-        formResultDictionary.Add(FormField.Zorluk,QuestionSettings.Difficulty.ToString());
-        formResultDictionary.Add(FormField.Secenek,QuestionSettings.NumberOfOptions.ToString());
+        formResultDictionary.Add(FormField.Kategori,QuestionSettings.Data.Category.ToString());
+        formResultDictionary.Add(FormField.Bolum,(QuestionSettings.Data.GroupIndex+1).ToString());
+        formResultDictionary.Add(FormField.Zorluk,QuestionSettings.Data.Difficulty.ToString());
+        formResultDictionary.Add(FormField.Secenek,QuestionSettings.Data.NumberOfOptions.ToString());
         formResultDictionary.Add(FormField.Soru,resultData.QuestionCount.ToString());
         formResultDictionary.Add(FormField.Dogru,resultData.CorrectAnswerCount.ToString());
         formResultDictionary.Add(FormField.Yanlıs,resultData.WrongAnswerCount.ToString());

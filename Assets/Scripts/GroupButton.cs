@@ -24,7 +24,7 @@ public class GroupButton : MonoBehaviour
 
     void OnButtonClick()
     {
-        QuestionSettings.GroupIndex = _index;
+        QuestionSettings.Data.GroupIndex = _index;
         SceneManager.LoadScene(_nextSceneIndex);
     }
 

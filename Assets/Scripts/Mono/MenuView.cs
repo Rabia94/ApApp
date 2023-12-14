@@ -1,4 +1,5 @@
 ﻿using System;
+using NonMono;
 using TMPro;
 using UnityEngine;
 using static TMPro.TMP_Dropdown;
@@ -40,7 +41,7 @@ public class MenuView : MonoBehaviour
             optionData.text = ((Category)i).ToString();
             category.options.Add((optionData));
         }
-        category.value = (int)QuestionSettings.Category;
+        category.value = (int)QuestionSettings.Data.Category;
     }
 
     void SetDifficulty()
@@ -52,16 +53,16 @@ public class MenuView : MonoBehaviour
             optionData.text = ((Difficulty)i).ToString();
             difficulty.options.Add((optionData));
         }
-        difficulty.value = (int)QuestionSettings.Difficulty;
+        difficulty.value = (int)QuestionSettings.Data.Difficulty;
     }
 
     void SetNumberOfChoices()
     {
-        numberOfChoices.value = Math.Max(0,(int)(QuestionSettings.NumberOfOptions*.5f)-1);
+        numberOfChoices.value = Math.Max(0,(int)(QuestionSettings.Data.NumberOfOptions*.5f)-1);
     }
     void SetNumberOfQuestions()
     {
-        numberOfQuestions.text= QuestionSettings.QuestionCount.ToString();
+        numberOfQuestions.text= QuestionSettings.Data.QuestionCount.ToString();
     }
 
     void ListenValueChange()
@@ -75,13 +76,14 @@ public class MenuView : MonoBehaviour
 
     private void UpdateQuestionSettings()
     {
-        QuestionSettings.Difficulty = (Difficulty)difficulty.value;
-        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out QuestionSettings.NumberOfOptions );
-        Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out QuestionSettings.WordRepeatCount);
-        QuestionSettings.QuestionCount = QuestionSettings.WordRepeatCount * _questionModel.GetSelectedCategoryGroupWords().Count;
-        Debug.Log(QuestionSettings.Category);
-        Debug.Log(QuestionSettings.Difficulty);
-        Debug.Log(QuestionSettings.NumberOfOptions);
-        Debug.Log(QuestionSettings.QuestionCount);
+        QuestionSettings.Data.Difficulty = (Difficulty)difficulty.value;
+        Int32.TryParse(numberOfChoices.options[numberOfChoices.value].text, out QuestionSettings.Data.NumberOfOptions );
+        Int32.TryParse(kelimeTekrarSayısı.options[kelimeTekrarSayısı.value].text, out QuestionSettings.Data.WordRepeatCount);
+        QuestionSettings.Data.QuestionCount = QuestionSettings.Data.WordRepeatCount * _questionModel.GetSelectedCategoryGroupWords().Count;
+        Debug.Log(QuestionSettings.Data.Category);
+        Debug.Log(QuestionSettings.Data.Difficulty);
+        Debug.Log(QuestionSettings.Data.NumberOfOptions);
+        Debug.Log(QuestionSettings.Data.QuestionCount);
+        SaveManager.SaveQuestionSettings();
     }
 }

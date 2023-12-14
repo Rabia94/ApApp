@@ -16,20 +16,20 @@ public class QuestionView : MonoBehaviour
     private void Awake()
     {
         defaultCellSize = wordHolder.cellSize;
-        questionText.text = 1 + "/" + QuestionSettings.QuestionCount;
+        questionText.text = 1 + "/" + QuestionSettings.Data.QuestionCount;
     }
 
     public void SetCurrentQuestion(QuestionData questionData,UnityAction onWrongAnswer, UnityAction onCorrectAnswer)
     {
         wordHolder.cellSize = defaultCellSize;
-        questionText.text = questionData.QuestionIndex + "/" + QuestionSettings.QuestionCount;
+        questionText.text = questionData.QuestionIndex + "/" + QuestionSettings.Data.QuestionCount;
         var count = wordHolder.transform.childCount;
         for (int i = 0; i < count; i++)
         {
             Destroy(wordHolder.transform.GetChild(i).gameObject);
         }
 
-        for (int i = 0; i < QuestionSettings.NumberOfOptions; i++)
+        for (int i = 0; i < QuestionSettings.Data.NumberOfOptions; i++)
         {
             if (questionData.AllWords.Count-1 < i)
             {

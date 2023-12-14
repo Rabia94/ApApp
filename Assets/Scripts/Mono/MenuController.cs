@@ -12,7 +12,7 @@ public class MenuController : MonoBehaviour
 
     public void SelectMode(int i)
     {
-        QuestionSettings.Mode = (Mode)i;
+        QuestionSettings.Data.Mode = (Mode)i;
         OpenQuestionSettingsMenu();
     }
 

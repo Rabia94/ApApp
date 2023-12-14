@@ -36,7 +36,7 @@ public class QuestionController : MonoBehaviour
     private void Initialize()
     {
         HideClue();
-        subCategoryWords = questionModel.GetCategoryGroupWords(QuestionSettings.Category,QuestionSettings.GroupIndex);
+        subCategoryWords = questionModel.GetCategoryGroupWords(QuestionSettings.Data.Category,QuestionSettings.Data.GroupIndex);
         foreach (var word in subCategoryWords)
         {
             wordCountDictionary.Add(word,0);
@@ -71,7 +71,7 @@ public class QuestionController : MonoBehaviour
         List<Word> availableWords = new();
         foreach (var wordCountPair in wordCountDictionary)
         {
-            if (wordCountPair.Value < QuestionSettings.WordRepeatCount)
+            if (wordCountPair.Value < QuestionSettings.Data.WordRepeatCount)
             {
                 availableWords.Add(wordCountPair.Key);
             }
@@ -130,7 +130,7 @@ public class QuestionController : MonoBehaviour
         
         currentQuestionIndex++;
 
-        if (currentQuestionIndex<=QuestionSettings.QuestionCount)
+        if (currentQuestionIndex<=QuestionSettings.Data.QuestionCount)
         {
             SetWordData();
         }
@@ -156,11 +156,11 @@ public class QuestionController : MonoBehaviour
     void ShowResultPage()
     {
         questionView.ShowResultPage(questionModel.ResultData);
-        int score = (int)(questionModel.ResultData.CorrectAnswerCount * 100f / QuestionSettings.QuestionCount);
-        int highestValue = SaveManager.GetCategoryResult(QuestionSettings.Category, QuestionSettings.GroupIndex);
+        int score = (int)(questionModel.ResultData.CorrectAnswerCount * 100f / QuestionSettings.Data.QuestionCount);
+        int highestValue = SaveManager.GetCategoryResult(QuestionSettings.Data.Category, QuestionSettings.Data.GroupIndex);
         if (score > highestValue)
         {
-            SaveManager.SaveCategoryResult(QuestionSettings.Category, QuestionSettings.GroupIndex,score);
+            SaveManager.SaveCategoryResult(QuestionSettings.Data.Category, QuestionSettings.Data.GroupIndex,score);
         }
     }
 
